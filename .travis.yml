@@ -1,0 +1,22 @@
+language: node_js
+node_js:
+- '6'
+branches:
+  only:
+  - dev
+before_install:
+- export TZ='Asia/Shanghai'
+- npm install -g hexo
+- npm install -g hexo-cli
+- openssl aes-256-cbc -K $encrypted_dc70c6c06754_key -iv $encrypted_dc70c6c06754_iv
+  -in .travis/id_rsa_blog.enc -out ~/.ssh/id_rsa -d
+- chmod 600 ~/.ssh/id_rsa
+- eval $(ssh-agent)
+- ssh-add ~/.ssh/id_rsa
+- cp .travis/ssh_config ~/.ssh/config
+- git config --global user.name "NiroDu"
+- git config --global user.email nirodu1219@outlook.com
+install:
+- npm install
+script:
+- hexo clean && hexo g -d
