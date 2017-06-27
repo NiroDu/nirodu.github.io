@@ -1,6 +1,12 @@
 ---
 title: Hexo 初入记载
+date: 2017-03-10 17:17:18
+tags:
 ---
+
+Hexo预备式。
+
+<!-- more -->
 
 [Hexo文档链接](https://hexo.io/zh-cn/docs/index.html) 
 
@@ -56,4 +62,43 @@ $ hexo publish post <filename>
 ```
 
 
+### skip_render
+> **跳过指定文件的渲染，可使用 [glob](https://github.com/isaacs/node-glob) 表达式来匹配路径。**
+> **可以实现在hexo中添加自己定制的页面文件。**
 
+在博客根目录的`_config.yml`下配置。
+
+1. 要跳过 `source` 目录下的 `单个文件skip.html`
+千万不要加上个 / 写成 /skip.html，这里只能填相对于source文件夹的相对路径。
+``` yml
+skip_render: skip.html
+```
+
+2. 要忽略 `source` 下的 `skip文件夹下所有文件`
+``` yml
+skip_render: skip/*
+```
+
+3. 要忽略`source`下的`skip文件夹下所有文件和目录`，可以这样配置：
+```yml
+skip_render: skip/**
+```
+
+4. 要忽略 `多个路径的文件或目录`，可以这样配置：
+```yml
+skip_render:
+    - skip.html
+    - skip/*
+    - test/*
+```
+
+
+## 插件
+
+#### 1. [hexo-admin](https://github.com/jaredly/hexo-admin) (一个本地可视化的markdown编辑器)
+进入hexo根目录执行:
+```bash
+$ npm install --save hexo-admin
+$ hexo server -d
+$ open http://localhost:4000/admin/
+```
