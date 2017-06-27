@@ -26,7 +26,7 @@ archive_dir: archives #档案文件夹，默认是archives
 category_dir: categories #分类文件夹，默认是categories
 code_dir: downloads/code #代码文件夹，默认是downloads/code
 i18n_dir: :lang #国际化文件夹，默认跟language相同
-skip_render: #不需要渲染的文件夹或文件夹,放在[]中
+skip_render: resume/** #不需要渲染的文件夹或文件夹,放在[]中
 
 # Writing
 new_post_name: :title.md # File name of new posts
