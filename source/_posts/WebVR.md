@@ -1,9 +1,7 @@
----
 title: WebVR
 date: 2017-05-25 17:17:18
 tags:
 ---
-
 > WebVR 是早期和实验性的 JavaScript API，它提供了访问如 Oculus Rift 和 Google Cardboard 等 VR 设备功能的 API。
 
 <!-- more -->
@@ -13,6 +11,9 @@ tags:
 VR 应用需要高精度、低延迟的接口，才能传递一个可接受的体验。而对于类似 Device Orientation Event 接口，虽然能获取浅层的 VR 输入，但这并不能为高品质的 VR 提供必要的精度要求。WebVR 提供了专门访问 VR 硬件的接口，让开发者能构建舒适的 VR 体验。
 
 WebVR API 目前可用于安装了 Firefox nightly 的 Oculus Rift、Chrome 的实验性版本和 Samsung Gear VR 的浏览器。当然，如果你现在就想在你的移动端浏览器体验 WebVR，可以使用 [WebVR Polyfill](https://github.com/googlevr/webvr-polyfill) 
+
+
+
 
 
 ## WebVR 开发

@@ -1,0 +1,7 @@
+options:
+  askImageFilename: true
+  lineNumbers: true
+  imagePath: /img/Travis
+  imagePrefix: ''
+editor:
+  lineNumbers: true
