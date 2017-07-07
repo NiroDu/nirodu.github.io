@@ -1,7 +1,8 @@
 menu:
     Blog: /
     Archive: /archives/
-    resume: /resume/
+    # Resume: /resume/
+    Collect: /collect/
     GitHub: https://github.com/nirodu
 
 favicon: /favicon.png
