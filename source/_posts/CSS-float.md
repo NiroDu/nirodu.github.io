@@ -9,6 +9,8 @@ desc:
 
 <!-- more -->
 
+[先入为主式先阅读：张鑫旭的一篇关于浮动的文章](http://www.zhangxinxu.com/wordpress/2010/01/css-float%E6%B5%AE%E5%8A%A8%E7%9A%84%E6%B7%B1%E5%85%A5%E7%A0%94%E7%A9%B6%E3%80%81%E8%AF%A6%E8%A7%A3%E5%8F%8A%E6%8B%93%E5%B1%95%E4%B8%80/)
+
 # 浮动的基本理解
 ## 浮动定义
 > 浮动可以理解为让某个div元素脱离标准流，漂浮在标准流之上，和标准流不是一个层次。
@@ -79,6 +81,7 @@ div2的左边有浮动元素div1，因此只要在div2的CSS样式中使用 `cle
 
 用闭合浮动比清除浮动更加严谨。
 
+> 清除浮动其实就一个目的，就是解决高度塌陷的问题。为什么会高度塌陷？什么时候会高度塌陷？塌陷原因是：元素含有浮动属性 – 破坏inline box – 破坏line box高度 – 没有高度 – 塌陷。什么时候会塌陷：当标签里面的元素只要样子没有实际高度时会塌陷。
 
 #### 清理浮动的五种方法，（推荐使用最后一种)：
 
@@ -110,5 +113,17 @@ div2的左边有浮动元素div1，因此只要在div2的CSS样式中使用 `cle
     优点：结构语义化完全正确，代码量极少。
     缺点：盒模型属性已经改变，由此造成的一系列问题，得不偿失，不推荐使用。
 
+- **清除浮动方法五：使用 :after 伪元素**
+
+　　由于IE6-7不支持:after，使用 zoom:1触发 hasLayout。
+
+    ```css
+    .fix{zoom:1;}
+    .fix:after{display:block; content:'clear'; clear:both; line-height:0; visibility:hidden;}
+    ```
+
+    content里面的内容貌似随便写什么东西都没有问题，line-height:0 写成 height:0 也是可以的。
+
 #### 参考资料
 - [CSS浮动(float,clear)通俗讲解](http://www.cnblogs.com/iyangyuan/archive/2013/03/27/2983813.html)
+- [(http://www.iyunlu.com/view/css-xhtml/55.html)

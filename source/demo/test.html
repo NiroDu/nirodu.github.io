@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+    .p-name {
+        height: 3em;
+    }
+    
+    a:link,
+    a:visited {
+        color: #333333;
+        text-decoration: none;
+    }
+    
+    .list-h dl {
+        float: left;
+    }
+    
+    #madding-1 dl {
+        padding: 0 10px;
+        text-align: center;
+        width: 235px;
+    }
+    
+    #madding-1 dt {
+        height: 130px;
+        position: relative;
+    }
+    
+    .p-img {
+        margin: 5px 0;
+    }
+    
+    #madding-1 .p-price {
+        background: none repeat scroll 0 0 #FF3333;
+        bottom: 10px;
+        color: #FFFFFF;
+        font-family: arial;
+        font-weight: bold;
+        height: 14px;
+        line-height: 14px;
+        padding: 2px 5px;
+        position: absolute;
+        right: 20px;
+    }
+    
+    #madding-1 .p-price {
+        right: 50px;
+    }
+    
+    .new-price-x {
+        margin: -28px 0 0 74px;
+    }
+    
+    .new-price {
+        display: inline-block;
+        background: #FF3333;
+        color: #fff;
+        font-family: arial;
+        font-weight: bold;
+        line-height: 14px;
+        padding: 2px 5px;
+    }
+    /* 下一个demo*/
+    /*     
+    .test {
+        width: 25em;
+        margin: 2em auto;
+    }
+    
+    .box {
+        padding: 2em;
+        border: 1px solid #beceeb;
+        border-radius: 2px;
+        background-color: #f0f3f9;
+        position: relative;
+    }
+    
+    .ok {
+        color: green;
+        font-size: 6em;
+        position: absolute;
+        right: -11px;
+        bottom: -.5em;
+    } */
+    /* .test {
+        width: 25em;
+        margin: 2em auto;
+    }
+    
+    .box {
+        padding: 2em;
+        border: 1px solid #beceeb;
+        border-radius: 2px;
+        background-color: #f0f3f9;
+    }
+    
+    .rel {
+        position: relative;
+    }
+    
+    .ok {
+        color: green;
+        font-size: 6em;
+        position: absolute;
+        right: -10px;
+        top: -1em;
+    } */
+    
+    .dib-baseline {
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+        border: 1px solid #cad5eb;
+        background-color: #f0f3f9;
+    }
+</style>
+
+<body>
+
+    <span class="dib-baseline"></span>
+    <span class="dib-baseline">x-baseline</span>
+
+    <div id="madding-1" class="mc list-h">
+        <dl>
+            <dt class="p-img">
+                    <a href="##"><img width="130" height="130" src="http://img10.360buyimg.com/n3/834/11752677-6197-4ffa-b4c0-e66d02640bad.jpg"></a>
+                    <div class="p-price">￥999.00</div>
+                </dt>
+            <dd class="p-name">
+                <a href="##">LG  GD580  3G手机 300万像素 999返100元券！</a>
+            </dd>
+        </dl>
+    </div>
+
+
+    <!--首先HTML部分需要添加一层block水平的标签（其实可以不用加，只要让img外面的a标签block水平显示即可），
+        让标价与图片不会在一个line box中显示，同时将标价外面的div标签改为inline水平元素的标签方便inline-block化  -->
+    <div id="madding-1" class="mc list-h">
+        <dl>
+            <dt class="p-img">
+            <a href="##"><img width="130" height="130" src="http://img10.360buyimg.com/n3/834/11752677-6197-4ffa-b4c0-e66d02640bad.jpg" /></a>
+            <div class="new-price-x"><span class="new-price">￥999.00</span></div>
+    </dt>
+            <dd class="p-name">
+                <a href="##">LG  GD580  3G手机 300万像素 999返100元券！</a>
+            </dd>
+        </dl>
+    </div>
+    <!-- 
+
+    <div class="test">
+        <div class="box">
+            CSS relative相对定位的最小化影响原则
+            <strong class="ok">√</strong>
+        </div>
+    </div> -->
+
+    <!-- <div class="test">
+        <div class="box">CSS relative相对定位的最小化影响原则</div>
+        <div class="rel"><strong class="ok">√</strong></div>
+    </div> -->
+</body>
+
+</html>

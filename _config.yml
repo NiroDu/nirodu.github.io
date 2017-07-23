@@ -30,6 +30,7 @@ skip_render:
  - collect/**
  - resume/**
  - vue_learn/**
+ - demo/**
 # - resume/** #不需要渲染的文件夹或文件夹,放在[]中
 
 # Writing
