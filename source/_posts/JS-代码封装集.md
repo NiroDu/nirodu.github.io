@@ -41,3 +41,64 @@ scrollBottomTest =function(){
 }  
 ```
 [附DEMO-导航火箭](/demo/rocket/index.html)
+
+
+## 2、js结合rem控制字体随着分辨率变化而变化
+```js
+        function fontSize() {
+            var deviceWidth = $(document).width();
+            if (deviceWidth > 640) {
+                deviceWidth = 640;
+                console.log(deviceWidth);
+            }
+
+            var fontSize = deviceWidth / 6.4;
+            $("html").css("fontSize", fontSize);
+            console.log(fontSize)
+        }
+
+        fontSize();
+
+        $(window).resize(function() {
+            fontSize();
+        });
+```
+**或者rem是通过css控制**
+```css
+html{-webkit-text-size-adjust:none; /*解决chrome浏览器下字体不能小于12px*/}
+
+html {
+	font-size:62.5%
+}
+@media only screen and (min-width:321px) { /*iphone5*/
+    html {
+    font-size:62.5%!important
+    }
+}
+@media only screen and (min-width:361px) { /*三星note*/
+    html {
+    font-size:70.31%!important
+    }
+}
+@media only screen and (min-width:376px) { /*iphone6*/
+    html {
+    font-size:73.24%!important
+    }
+}
+@media only screen and (min-width:481px) {
+    html {
+    font-size:94%!important
+    }
+}
+@media only screen and (min-width:561px) {
+    html {
+    font-size:109%!important
+    }
+}
+@media only screen and (min-width:641px) {
+    html {
+    font-size:125%!important
+    }
+}
+```
+[demo](http://www.qietu.com/html/f2/ntv2rem/)
