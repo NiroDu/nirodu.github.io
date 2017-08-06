@@ -5,7 +5,7 @@ menu:
     Collect: /collect/
     GitHub: https://github.com/nirodu
 
-favicon: /favicon.png
+favicon: /favicon-1.png
 logo: /favicon.png
 
 # Comment
@@ -15,7 +15,7 @@ duoshuo:
 
 # Analytics
 # google-analytics:
-ga: UA-65933410-1
+# ga: UA-65933410-1
 
 # Copyright Infomation
 startyear: 2017
