@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>float show</title>
+    <style>
+        .aa {
+            background: #ff2;
+            height: 400px;
+        }
+        
+        .bb {
+            background: #717;
+            height: 400px;
+        }
+        
+        .cc {
+            background: #555;
+            height: 400px;
+        }
+    </style>
+
+    <body>
+        <div class="aa">
+        </div>
+        <div class="bb">
+        </div>
+        <div class="cc">
+        </div>
+    </body>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            // 监听滚动事件
+            var h = $(".cc").offset().top - 600;
+
+            $(window).scroll(function() {
+                // 获得div的高度
+
+                // if ($(this).scrollTop() > h && $(this).scrollTop() < h + $(".bb").height()) {
+                if ($(this).scrollTop() > h) {
+                    // 滚动到指定位置
+                    // $("#flow-left").show();
+                    console.log("haha");
+                    $(".cc").addClass("hah");
+
+                } else {
+                    // $("#flow-left").hide();
+                    $(".cc").removeClass("hah");
+
+                }
+            });
+
+        })
+    </script>
+
+</head>
+
+<body>
