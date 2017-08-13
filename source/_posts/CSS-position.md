@@ -1,8 +1,12 @@
 ---
 title: CSS - position定位详解
 date: 2017-03-26 15:49:25
-tags:
-desc:
+layout: post
+comments: true
+tags: [前端]
+categories: [前端]
+keywords: 前端
+description:
 ---
 
 彻底解决position疑惑。

@@ -1,9 +1,12 @@
 ---
 title: SSH Key 浅析
-tags: [Travis]
-categories: []
 date: 2017-06-03 09:38:00
-desc:
+layout: post
+comments: true
+tags: [Travis]
+categories: [前端]
+keywords: 前端
+description:
 ---
 
 关于SSH Key的一些配置操作。

@@ -1,7 +1,12 @@
 ---
 title: mac常用命令行记录
 date: 2017-07-21 11:31:36
-tags:
+layout: post
+comments: true
+tags: [前端]
+categories: [前端]
+keywords: 前端
+description:
 ---
 
 OSX上的一些常用命令。

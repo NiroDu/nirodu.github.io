@@ -1,10 +1,12 @@
 ---
 title: ✡ Travis自动化构建+部署
-tags:
-  - Travis
-categories: []
 date: 2017-06-11 09:38:00
-desc:
+layout: post
+comments: true
+tags: [Travis]
+categories: [前端]
+keywords: 前端
+description:
 ---
 使用Travis自动化构建+部署可让我们摆脱对Hexo本机环境的依赖，实现不管在哪台电脑上都可以实时更新自己的博客。
 

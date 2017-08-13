@@ -1,7 +1,12 @@
 ---
 title: WebVR
 date: 2017-05-25 17:17:18
-tags:
+layout: post
+comments: true
+tags: [Travis]
+categories: [前端]
+keywords: 前端
+description:
 ---
 > WebVR 是早期和实验性的 JavaScript API，它提供了访问如 Oculus Rift 和 Google Cardboard 等 VR 设备功能的 API。
 

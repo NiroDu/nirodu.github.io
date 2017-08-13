@@ -1,9 +1,12 @@
 ---
 title: Chrome调试技巧
-tags: []
-categories: []
 date: 2017-04-22 09:38:00
-desc:
+layout: post
+comments: true
+tags: [前端]
+categories: [前端]
+keywords: 前端
+description:
 ---
 
 记录一些比较实用的点。

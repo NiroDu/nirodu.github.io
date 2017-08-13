@@ -1,7 +1,12 @@
 ---
 title: Hexo 初入记载
 date: 2017-03-10 17:17:18
-tags:
+layout: post
+comments: true
+tags: [前端]
+categories: [前端]
+keywords: 前端
+description:
 ---
 
 Hexo预备式。

@@ -73,18 +73,18 @@ pagination_dir: page #分页文件夹名称
 #   hexo-generator-sitemap  #sitemap插件
 
 ## Themes: https://hexo.io/themes/
-theme: apollo
+# theme: apollo
 
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-# theme: hiker
+theme: hiker
 
-archive_generator:
-    per_page: 0
-    yearly: false
-    monthly: false
-    daily: false
+# archive_generator:
+#     per_page: 0
+#     yearly: false
+#     monthly: false
+#     daily: false
 
 # disqus: 
 

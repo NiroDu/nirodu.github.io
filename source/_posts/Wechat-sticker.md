@@ -1,7 +1,12 @@
 ---
 title: 微信表情 → 头像
 date: 2017-07-16 23:04:23
-tags:
+layout: post
+comments: true
+tags: [Travis]
+categories: [前端]
+keywords: 前端
+description:
 ---
 
 简单记录下，操作微信表情解决头像荒。

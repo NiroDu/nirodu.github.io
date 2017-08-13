@@ -1,7 +1,12 @@
 ---
 title: 前端LOGO设计
+layout: post
 date: 2017-07-20 19:57:20
-tags:
+comments: true
+tags: [前端]
+categories: [前端]
+keywords: 前端
+description:
 ---
 
 **记录tutorabc前端团队LOGO设计过程。**
