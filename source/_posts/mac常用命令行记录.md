@@ -4,6 +4,10 @@ date: 2017-07-21 11:31:36
 tags:
 ---
 
+OSX上的一些常用命令。
+
+<!-- more -->
+
 #### 将系统隐藏文件显示出来：
 ```bash
 $ defaults write com.apple.Finder AppleShowAllFiles YES 

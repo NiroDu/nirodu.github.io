@@ -4,6 +4,8 @@ date: 2017-07-20 22:13:46
 tags:
 ---
 
+(正在整理中..
+
 <!-- more -->
 
 
@@ -55,3 +57,14 @@ tags:
     display: inline-block;
 }
 ```
+
+
+#### 文字省略号...
+{
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    
+}

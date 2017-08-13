@@ -19,5 +19,6 @@ before_install:
 install:
 - npm install
 - npm install hexo-deployer-git --save
+- npm install -S hexo-generator-json-content
 script:
 - hexo clean && hexo g -d
