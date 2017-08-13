@@ -78,7 +78,7 @@ pagination_dir: page #分页文件夹名称
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: hiker
+themes: hiker
 
 # archive_generator:
 #     per_page: 0
