@@ -65,6 +65,7 @@ description:
 
 
 #### 文字省略号...
+```css
 {
     width: 100%;
     text-overflow: ellipsis;
@@ -73,3 +74,42 @@ description:
     display: inline-block;
     
 }
+```
+
+#### 响应式rem + vw 组合
+例：设计稿宽375px;
+
+整个屏幕是100vw;
+
+16px : 375px = 4.266666666666667vw : 100vw;
+默认1rem为16px;
+
+设置如下：
+```css
+@media all and (max-width: 767px) {
+    html,
+    body {
+        font-size: 4.266666666666667vw;
+    }
+}
+```
+
+之后单位可统一用rem写去;
+
+#### 横排多个item滚动
+只需要item定宽的写法：
+四层div：爷、父、子、孙
+```css
+.爷{
+    overflow-x: scroll;
+}
+.父{
+    display: table;
+}
+.子{
+    display: table-cell;
+}
+.孙{
+    width: 12rem;//具体宽度
+}
+```
