@@ -98,9 +98,9 @@ skip_render:
 ```
 
 
-## 插件
+### 插件
 
-#### 1. [hexo-admin](https://github.com/jaredly/hexo-admin) (一个本地可视化的markdown编辑器)
+#### [hexo-admin](https://github.com/jaredly/hexo-admin) (一个本地可视化的markdown编辑器)
 进入hexo根目录执行:
 ```bash
 $ npm install --save hexo-admin

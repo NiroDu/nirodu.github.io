@@ -31,6 +31,7 @@ skip_render:
  - resume/**
  - vue_learn/**
  - demo/**
+ - unrender/**
 # - resume/** #不需要渲染的文件夹或文件夹,放在[]中
 
 # Writing

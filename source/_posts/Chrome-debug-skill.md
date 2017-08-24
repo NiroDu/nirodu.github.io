@@ -31,7 +31,7 @@ console.info：提示类信息
 console.error：错误信息
 console.warn：警示信息
 
-#### JS调试部分
+## JS调试部分
 
 <img src="/img/chromeTips/1.gif" alt="">
 从左到右，各个图标表示的功能分别为：

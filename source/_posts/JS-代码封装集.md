@@ -1,7 +1,7 @@
 ---
 title: JS - 代码封装集
-date: 2017-07-20 22:13:56
 layout: post
+date: 2017-07-20 22:13:56
 comments: true
 tags: [前端]
 categories: [前端]
@@ -13,7 +13,7 @@ description:
 
 <!-- more -->
 
-## 1、jquery如何判断滚动条滚到页面底部并执行事件
+## jquery如何判断滚动条滚到页面底部并执行事件
 
 
 首先理解三个dom元素，分别是：`clientHeight`、`offsetHeight`、`scrollTop`。
@@ -50,7 +50,7 @@ scrollBottomTest =function(){
 [附DEMO-导航火箭](/demo/rocket/index.html)
 
 
-## 2、js结合rem控制字体随着分辨率变化而变化
+## js结合rem控制字体随着分辨率变化而变化
 ```js
         function fontSize() {
             var deviceWidth = $(document).width();
@@ -109,3 +109,24 @@ html {
 }
 ```
 [demo](http://www.qietu.com/html/f2/ntv2rem/)
+
+
+```html
+<video
+  id="videoALL"
+  src="video/01.mp4"
+  poster="images/1.jpg" /*视频封面*/
+  preload="auto"
+  webkit-playsinline="true" /*这个属性是ios 10中设置可以
+                     让视频在小窗内播放，也就是不是全屏播放*/ 
+  playsinline="true"  /*IOS微信浏览器支持小窗内播放*/
+  x-webkit-airplay="allow"
+  x5-video-player-type="h5"  /*启用H5播放器,是wechat安卓版特性*/
+  x5-video-player-fullscreen="true" /*全屏设置，
+                     设置为 true 是防止横屏*/>
+  x5-video-orientation="portraint" /*播放器支付的方向，
+                     landscape横屏，portraint竖屏，默认值为竖屏*/
+  style="object-fit:fill">
+</video>
+```
+[HTML5实现微信播放全屏的方法详解](http://www.php.cn/html5-tutorial-362962.html)

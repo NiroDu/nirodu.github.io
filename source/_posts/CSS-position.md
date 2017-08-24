@@ -13,15 +13,20 @@ description:
 
 <!-- more -->
 
-- #### absolute
+## 五个基本值
+- **absolute**
 生成绝对定位的元素，<u>相对于 static 定位以外的第一个父元素进行定位</u>。
-- #### fixed 
+
+- **fixed**
 生成绝对定位的元素，<u>相对于浏览器窗口进行定位</u>。
-- #### relative 
+
+- **relative**
 生成相对定位的元素，<u>相对于其正常位置进行定位</u>。
-- #### static 
+
+- **static**
 默认值。<u>没有定位，元素出现在正常的流中</u>（忽略 top, bottom, left, right 或者 z-index 声明）。 
-- #### inherit 
+
+- **inherit**
 规定应该从父元素继承 position 属性的值。
 
 
@@ -126,5 +131,5 @@ top: 20px;
 若它的父级元素和爷爷级元素都是非position:static属性，它会选择距离最近的父元素绝对定位。
 
 
-#### 参考资料
+## 参考资料
 - http://blog.csdn.net/fungleo/article/details/50056111

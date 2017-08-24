@@ -28,7 +28,7 @@ WebVR API 目前可用于安装了 Firefox nightly 的 Oculus Rift、Chrome 的�
 - JavaScript, Three.js 与 WebVR
 - CSS 与 WebVR（仍处于非常早期阶段）
 
-#### A-Frame
+### A-Frame
 A-Frame 是一个通过 HTML 创建 VR 体验的开源 WebVR 框架。通过该框架构建的 VR 场景能兼容智能手机、PC、 Oculus Rift 和 HTC Vive。
 
 A-Frame 让代码结构化。Three.js 的代码通常是松散的，A-Frame 在 Three.js 之上构建了一个声明式的实体组件系统（entity-component-system）。另外，组件能发布并分享出去，其它开发者能以 HTML 的形式进行使用。
@@ -57,7 +57,7 @@ A-Frame 的实例 [DEMO](http://codepen.io/mozvr/pen/BjygdO/)
 </a-scene>
 ```
 
-#### 基本概念（以 Aframe v0.3 版本为参考）：
+### 基本概念（以 Aframe v0.3 版本为参考）：
 ![右手坐标系](/img/webvr/coordinate.jpg)
 - 该框架的三维坐标轴遵循`右手坐标系`，如上图。
 - 场景的原点默认在视口底边的中点

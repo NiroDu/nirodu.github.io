@@ -13,9 +13,38 @@ description:
 
 <!-- more -->
 
-<div class="tip">此乃花小微大王需求！！</div>
+<style type="text/css">
+.tip {
+    position: relative;
+    margin: 2em 0;
+    padding: 12px 24px 12px 30px;
+    border-left: 4px solid #f66;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background-color: #f8f8f8;
+}
+.tip:before {
+    position: absolute;
+    top: 14px;
+    left: -12px;
+    content: "!";
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #f66;
+    font-family: 'Dosis', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+}
+</style>
+
+<div class="tip">此乃花小微大王要求！！</div>
 
 花花和我打电话时突发奇想，换了个头像，出自赞赏作者界面的表情。
+
 ![wechatSticker1](/img/wechatSticker/1.jpg)
 
 > 好，开始吧。微信客户端表情导出使用。（Mac版）

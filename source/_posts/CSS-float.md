@@ -87,47 +87,55 @@ div2的左边有浮动元素div1，因此只要在div2的CSS样式中使用 `cle
 
 > 清除浮动其实就一个目的，就是解决高度塌陷的问题。为什么会高度塌陷？什么时候会高度塌陷？塌陷原因是：元素含有浮动属性 – 破坏inline box – 破坏line box高度 – 没有高度 – 塌陷。什么时候会塌陷：当标签里面的元素只要样子没有实际高度时会塌陷。
 
-#### 清理浮动的五种方法，（推荐使用最后一种)：
+### 清理浮动的五种方法，（推荐使用最后一种)：
 
 - **清除浮动方法一：添加额外标签**
 
-    通过在浮动元素末尾添加一个空的标签例如 `<div style=”clear:both”></div>`。
+通过在浮动元素末尾添加一个空的标签例如 `<div style=”clear:both”></div>`。
 
-    优点：通俗易懂，容易掌握。
-    缺点：可以想象通过此方法，会添加多少无意义的空标签，有违结构与表现的分离，在后期维护中将是噩梦。
+优点：通俗易懂，容易掌握。
+缺点：可以想象通过此方法，会添加多少无意义的空标签，有违结构与表现的分离，在后期维护中将是噩梦。
 
 - **清除浮动方法二：使用 br标签和其自身的html属性**
 
-    `<br>` 有 clear=“all | left | right | none” 属性。
+`<br>` 有 clear=“all | left | right | none” 属性。
 
-    在浮动元素末尾添加 `<br clear="all" />`。
+在浮动元素末尾添加 `<br clear="all" />`。
 
-    优点：比空标签方式语义稍强，代码量较少。
-    缺点：同样有违结构与表现的分离，不推荐使用。
+优点：比空标签方式语义稍强，代码量较少。
+缺点：同样有违结构与表现的分离，不推荐使用。
 
 - **清除浮动方法三：父元素设置 `overflow：hidden`**
 
-    通过设置父元素overflow值设置为hidden；在IE6中还需要触发 hasLayout ，例如 `zoom：1；`
+通过设置父元素overflow值设置为hidden；在IE6中还需要触发 hasLayout ，例如 `zoom：1；`
 
-    优点：不存在结构和语义化问题，代码量极少
-    缺点：内容增多时候容易造成不会自动换行导致内容被隐藏掉，无法显示需要溢出的元素。
+优点：不存在结构和语义化问题，代码量极少
+缺点：内容增多时候容易造成不会自动换行导致内容被隐藏掉，无法显示需要溢出的元素。
 
 - **清除浮动方法四：父元素设置 `display:table`**
 
-    优点：结构语义化完全正确，代码量极少。
-    缺点：盒模型属性已经改变，由此造成的一系列问题，得不偿失，不推荐使用。
+优点：结构语义化完全正确，代码量极少。
+缺点：盒模型属性已经改变，由此造成的一系列问题，得不偿失，不推荐使用。
 
 - **清除浮动方法五：使用 :after 伪元素**
 
-　　由于IE6-7不支持:after，使用 zoom:1触发 hasLayout。
+由于IE6-7不支持:after，使用 zoom:1触发 hasLayout。
 
-    ```css
-    .fix{zoom:1;}
-    .fix:after{display:block; content:'clear'; clear:both; line-height:0; visibility:hidden;}
-    ```
+```CSS
+.fix {
+    zoom:1;
+}
+.fix:after {
+    display:block; 
+    content:'clear'; 
+    clear:both; 
+    line-height:0; 
+    visibility:hidden;
+}
+```
 
-    content里面的内容貌似随便写什么东西都没有问题，line-height:0 写成 height:0 也是可以的。
+content里面的内容貌似随便写什么东西都没有问题，line-height:0 写成 height:0 也是可以的。
 
-#### 参考资料
+# 参考资料
 - [CSS浮动(float,clear)通俗讲解](http://www.cnblogs.com/iyangyuan/archive/2013/03/27/2983813.html)
-- [(http://www.iyunlu.com/view/css-xhtml/55.html)
+- [那些年我们一起清除过的浮动](http://www.iyunlu.com/view/css-xhtml/55.html)
