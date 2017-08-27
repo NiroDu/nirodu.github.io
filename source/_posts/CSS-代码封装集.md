@@ -71,20 +71,19 @@ description:
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    display: inline-block;
-    
+    display: inline-block;   
 }
 ```
 
 #### 响应式rem + vw 组合
 例：设计稿宽375px;
 
-整个屏幕是100vw;
+整个屏幕是100vw，假如设计稿是375px宽，且默认1rem为16px，且1rem为接下要使用的标准单位;
 
+计算1rem等于多少vw(16px等于多少vw)：
 16px : 375px = 4.266666666666667vw : 100vw;
-默认1rem为16px;
 
-设置如下：
+再设置如下：
 ```css
 @media all and (max-width: 767px) {
     html,
@@ -94,22 +93,22 @@ description:
 }
 ```
 
-之后单位可统一用rem写去;
+之后单位可统一用rem去写;
 
 #### 横排多个item滚动
 只需要item定宽的写法：
 四层div：爷、父、子、孙
-```css
-.爷{
+```CSS
+.爷 {
     overflow-x: scroll;
 }
-.父{
+.父 {
     display: table;
 }
-.子{
+.子 {
     display: table-cell;
 }
-.孙{
+.孙 {
     width: 12rem;//具体宽度
 }
 ```
