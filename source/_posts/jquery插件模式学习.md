@@ -45,5 +45,6 @@ function() {}()
 !function() {}()
 ```
 
+
 ## 参考资料
 - [How to write jQuery plugin?](https://github.com/i5ting/How-to-write-jQuery-plugin)
