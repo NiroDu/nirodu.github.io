@@ -96,3 +96,11 @@ deploy:
   # repo: https://github.com/NiroDu/nirodu.github.io.git
   repo: git@github.com:NiroDu/nirodu.github.io.git
   branch: master
+
+# Admin
+admin:
+    name: admin
+    password: admin
+    secret: nirodu
+    expire: 60*1
+    # cors: http://localhost:3000
