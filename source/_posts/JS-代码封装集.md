@@ -130,3 +130,22 @@ html {
 </video>
 ```
 [HTML5实现微信播放全屏的方法详解](http://www.php.cn/html5-tutorial-362962.html)
+
+
+## 回调函数应用
+
+```js
+function main(go,callback){
+    console.log(go);
+    callback("hahaha");
+}
+
+function called(value){
+    console.log("回调函数已经调用");
+    console.log(value);
+}
+
+// 调用主方法并使用回调函数
+main("goValue",called);
+
+```
