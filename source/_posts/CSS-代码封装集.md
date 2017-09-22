@@ -112,3 +112,30 @@ description:
     width: 12rem;//具体宽度
 }
 ```
+
+#### 多行文本溢出显示省略号(...)的方法 （建议通过JS去解决）
+
+两种非标准的方式
+**-webkit-line-clamp**
+
+```css
+p {
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+```
+Demo: http://jsfiddle.net/Cople/maB8f/
+
+**-o-ellipsis-lastline**
+```css
+p {
+    overflow: hidden;
+    white-space: normal;
+    height: 3em;
+    text-overflow: -o-ellipsis-lastline;
+}
+```
+Demo: http://jsfiddle.net/Cople/ash5v/

@@ -29,8 +29,6 @@ i18n_dir: :lang #国际化文件夹，默认跟language相同
 skip_render:
  - collect/**
  - resume/**
- - vue_learn/**
- - demo/**
  - unrender/**
 # - resume/** #不需要渲染的文件夹或文件夹,放在[]中
 

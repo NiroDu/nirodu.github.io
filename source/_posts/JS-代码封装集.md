@@ -13,7 +13,7 @@ description:
 
 <!-- more -->
 
-## jquery如何判断滚动条滚到页面底部并执行事件
+#### jquery如何判断滚动条滚到页面底部并执行事件
 
 
 首先理解三个dom元素，分别是：`clientHeight`、`offsetHeight`、`scrollTop`。
@@ -50,18 +50,16 @@ scrollBottomTest =function(){
 [附DEMO-导航火箭](/demo/rocket/index.html)
 
 
-## js结合rem控制字体随着分辨率变化而变化
+#### js结合rem控制字体随着分辨率变化而变化
 ```js
         function fontSize() {
             var deviceWidth = $(document).width();
             if (deviceWidth > 640) {
                 deviceWidth = 640;
-                console.log(deviceWidth);
             }
 
             var fontSize = deviceWidth / 6.4;
             $("html").css("fontSize", fontSize);
-            console.log(fontSize)
         }
 
         fontSize();
@@ -70,45 +68,26 @@ scrollBottomTest =function(){
             fontSize();
         });
 ```
-**或者rem是通过css控制**
-```css
-html{-webkit-text-size-adjust:none; /*解决chrome浏览器下字体不能小于12px*/}
-
-html {
-	font-size:62.5%
-}
-@media only screen and (min-width:321px) { /*iphone5*/
-    html {
-    font-size:62.5%!important
-    }
-}
-@media only screen and (min-width:361px) { /*三星note*/
-    html {
-    font-size:70.31%!important
-    }
-}
-@media only screen and (min-width:376px) { /*iphone6*/
-    html {
-    font-size:73.24%!important
-    }
-}
-@media only screen and (min-width:481px) {
-    html {
-    font-size:94%!important
-    }
-}
-@media only screen and (min-width:561px) {
-    html {
-    font-size:109%!important
-    }
-}
-@media only screen and (min-width:641px) {
-    html {
-    font-size:125%!important
-    }
-}
-```
 [demo](http://www.qietu.com/html/f2/ntv2rem/)
+
+```js
+$(function(){
+	$(window).resize(infinite);
+	function infinite() {
+		var htmlWidth = $('html').width();
+		if (htmlWidth >= 750) {
+			$("html").css({
+				"font-size" : "40px"
+			});
+		} else {
+			$("html").css({
+				"font-size" :  40 / 750 * htmlWidth + "px"
+			});
+		}
+	}
+    infinite();
+});
+```
 
 
 ```html
@@ -132,7 +111,7 @@ html {
 [HTML5实现微信播放全屏的方法详解](http://www.php.cn/html5-tutorial-362962.html)
 
 
-## 回调函数应用
+#### 回调函数应用
 
 ```js
 function main(go,callback){
@@ -148,4 +127,40 @@ function called(value){
 // 调用主方法并使用回调函数
 main("goValue",called);
 
+```
+
+
+#### 多行文本溢出显示省略号(...)的方法
+
+除了各个浏览器私有的属性，有没有跨浏览器的解决方法呢？当然是通过js实现啦！（通过从后向前逐个删除末尾字符，直至元素的高度小于父元素高度）
+
+兼容性最好的方式：
+
+```html
+<div class="figcaption"><p>作为微软的游戏平台，Xbox已经出现在了Windows Phone和Windows 8中，就在最近，微软宣布将旗下的Zune消费品牌也一并整合至Xbox品牌下，Xbox Live服务影响力越来越大，渗透面也越来越广。</p></div>
+<div class="figcaption"><p>You probably can't do it (currently?) without a fixed-width font like Courier. With a fixed-width font every letter occupies the same horizontal space, so you could probably count the letters and multiply the result with the current font size in ems or exs. Then you would just have to test how many letters fit on one line, and then break it up.</p></div>
+```
+
+```js
+$(".figcaption").each(function(i){
+    var divH = $(this).height();
+    var $p = $("p", $(this)).eq(0);
+    // $("p", $(this)) 相当于 $(this).find("p") 
+    while ($p.outerHeight() > divH) {
+        $p.text($p.text().replace(/(\s)*([a-zA-Z0-9]+|\W)(\.\.\.)?$/, "..."));
+    };
+});
+```
+
+```css
+.figcaption {
+    background: #EEE;
+    width: 410px;
+    height: 3em;
+    margin: 1em;
+}
+.figcaption p {
+    margin: 0;
+    line-height: 1.5em;
+}
 ```
