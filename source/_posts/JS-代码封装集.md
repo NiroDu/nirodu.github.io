@@ -3,7 +3,7 @@ title: JS - 代码封装集
 layout: post
 date: 2017-07-20 22:13:56
 comments: true
-tags: [前端]
+tags: [js]
 categories: [前端]
 keywords: 前端
 description:

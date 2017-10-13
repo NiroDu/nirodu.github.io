@@ -3,7 +3,7 @@ title: SSH Key 浅析
 date: 2017-06-03 09:38:00
 layout: post
 comments: true
-tags: [Travis]
+tags: [SSH,Travis]
 categories: [前端]
 keywords: 前端
 description:

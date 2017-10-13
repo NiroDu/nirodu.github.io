@@ -3,9 +3,9 @@ title: Chrome调试技巧
 date: 2017-04-22 09:38:00
 layout: post
 comments: true
-tags: [前端]
+tags: [chrome]
 categories: [前端]
-keywords: 前端
+keywords:
 description:
 summary: 
 ---

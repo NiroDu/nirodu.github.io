@@ -3,7 +3,7 @@ title: WebVR
 date: 2017-05-25 17:17:18
 layout: post
 comments: true
-tags: [Travis]
+tags: [WebVR]
 categories: [前端]
 keywords: 前端
 description:
