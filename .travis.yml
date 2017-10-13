@@ -20,5 +20,7 @@ install:
 - npm install
 - npm install hexo-deployer-git --save
 - npm install -S hexo-generator-json-content
+# anatole主题需要的插件(下面那句)
+- npm install --save hexo-renderer-jade hexo-generator-archive
 script:
 - hexo clean && hexo g -d

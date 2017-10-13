@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Front End Engineer/Designer/Warrior
-subtitle: 
-description: Infinite possibility.
+title:  Niro Du
+subtitle: Warrior
+description: Warrior | Infinite possibility
 author: NiroDu
 language: zh-CN
 # language: en
@@ -77,13 +77,15 @@ pagination_dir: page #分页文件夹名称
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: hiker
+# theme: hiker
+theme: anatole
 
-# archive_generator:
-#     per_page: 0
-#     yearly: false
-#     monthly: false
-#     daily: false
+archive_generator:
+    per_page: 0
+    yearly: false
+    monthly: false
+    daily: false
+# per_page: 0 sets the number of items in archives, number 0 means no limit.
 
 # disqus: 
 

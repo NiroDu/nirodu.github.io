@@ -1,4 +1,3 @@
-@import url(http://fonts.useso.com/css?family=Raleway:200,500,700,800);
 @font-face {
 	font-family: 'icomoon';
 	src:url('../fonts/icomoon.eot?rretjt');
@@ -56,12 +55,6 @@ body{
 a{color: #2fa0ec;text-decoration: none;outline: none;}
 a:hover,a:focus{color:#74777b;}
 
-.htmleaf-container{
-	margin: 0 auto;
-	text-align: center;
-	overflow: hidden;
-}
-
 .bgcolor-1 { background: #f0efee; }
 .bgcolor-2 { background: #f9f9f9; }
 .bgcolor-3 { background: #e8e8e8; }/*light grey*/
@@ -74,83 +67,7 @@ a:hover,a:focus{color:#74777b;}
 .bgcolor-10{ background: #64448f; color: #fff;}/*Violet*/
 .bgcolor-11{ background: #3755ad; color: #fff;}/*dark blue*/
 .bgcolor-12{ background: #3498DB; color: #fff;}/*light blue*/
-/* Header */
-.htmleaf-header{
-	padding: 1em 190px 1em;
-	letter-spacing: -1px;
-	text-align: center;
-}
-.htmleaf-header h1 {
-	color: #fff;
-	font-weight: 600;
-	font-size: 2em;
-	line-height: 1;
-	margin-bottom: 0;
-	font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", "FontAwesome", sans-serif;
-}
-.htmleaf-header h1 span {
-	font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", "FontAwesome", sans-serif;
-	display: block;
-	font-size: 60%;
-	font-weight: 400;
-	padding: 0.8em 0 0.5em 0;
-	color: #c3c8cd;
-}
-/*nav*/
-.htmleaf-demo a{color: #1d7db1;text-decoration: none;}
-.htmleaf-demo{width: 100%;padding-bottom: 1.2em;}
-.htmleaf-demo a{display: inline-block;margin: 0.5em;padding: 0.6em 1em;border: 3px solid #1d7db1;font-weight: 700;}
-.htmleaf-demo a:hover{opacity: 0.6;}
-.htmleaf-demo a.current{background:#1d7db1;color: #fff; }
-/* Top Navigation Style */
-.htmleaf-links {
-	position: relative;
-	display: inline-block;
-	white-space: nowrap;
-	font-size: 1.5em;
-	text-align: center;
-}
 
-.htmleaf-links::after {
-	position: absolute;
-	top: 0;
-	left: 50%;
-	margin-left: -1px;
-	width: 2px;
-	height: 100%;
-	background: #dbdbdb;
-	content: '';
-	-webkit-transform: rotate3d(0,0,1,22.5deg);
-	transform: rotate3d(0,0,1,22.5deg);
-}
-
-.htmleaf-icon {
-	display: inline-block;
-	margin: 0.5em;
-	padding: 0em 0;
-	width: 1.5em;
-	text-decoration: none;
-}
-
-.htmleaf-icon span {
-	display: none;
-}
-
-.htmleaf-icon:before {
-	margin: 0 5px;
-	text-transform: none;
-	font-weight: normal;
-	font-style: normal;
-	font-variant: normal;
-	font-family: 'icomoon';
-	line-height: 1;
-	speak: none;
-	-webkit-font-smoothing: antialiased;
-}
-/* footer */
-.htmleaf-footer{width: 100%;padding-top: 10px;}
-.htmleaf-small{font-size: 0.8em;}
-.center{text-align: center;}
 /****/
 .related {
 	color: #fff;

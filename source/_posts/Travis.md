@@ -11,7 +11,9 @@ description:
 使用Travis自动化构建+部署可让我们摆脱对Hexo本机环境的依赖，实现不管在哪台电脑上都可以实时更新自己的博客。
 
 <!-- more -->
-
+<div class="tip">
+  在这里写一些重要的事情 / Something important...
+</div>
 ## **自动化构建+部署：**
 
 Travis 会在你每一次提交之后生成一个虚拟机来执行我们编写的脚本任务，脚本执行的内容会写在`.travis.yml`文件中。
