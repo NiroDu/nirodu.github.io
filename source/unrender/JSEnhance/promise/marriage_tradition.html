@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+            console.log = function(text) {
+                document.getElementById("ol").insertAdjacentHTML("beforeEnd", '<li>' + text + '</li>');    
+            };
+    </script>
+</head>
+<style>
+        pre {
+            position: absolute;
+            width: 640px;
+            border: 1px solid #ccc;
+            background-color: #f5f5f5;
+            padding: 1em;
+            top: 5em;
+            left: 350px;
+            font-size: 14px;
+            font-family: "Lucida Console", Monaco, monospace;
+        }
+</style>
+<body>
+
+    <h3>左结果，右代码</h3>
+    <ol id="ol"></ol>
+    <pre id="pre"></pre>
+
+</body>
+<script id="script">
+var NanShen = {
+    "身高": 180,
+    "体重": 80,
+    "年薪": "200K",
+    request: function (obj) {
+        // 攻略长辈成功与否随机决定
+        // 成功概率为80%
+        if (Math.random() > 0.2) {
+            obj.success();
+        } else {
+            obj.error();
+        }
+    }
+};
+
+var Request = function (names, success) {
+    var index = 0,
+        first = 0;
+    var request = function () {
+        if (names[index]) {
+            NanShen.request({
+                name: names[index],
+                success: function () {
+                    first = 0;
+                    console.log("成功拿下" + names[index]);
+                    index++;
+                    request();
+                },
+                error: function () {
+                    if (first == 1) {
+                        console.log("依旧没能拿下" + names[index] + "，求婚失败");
+                        return;
+                    } else {
+                        console.log("没能拿下" + names[index] + "，再试一次");
+                    }
+                    first = 1;
+                    request();
+                }
+            });
+        } else {
+            success();
+        }
+    };
+
+    request();
+};
+
+Request(["岳父", "大伯", "大姑"], function () {
+    NanShen.request({
+        name: "女神",
+        success: function () {
+            console.log("女神同意，求婚成功！");
+        },
+        error: function () {
+            console.log("女神不同意，求婚失败！");
+        }
+    });
+});
+</script>
+
+<script>
+    document.getElementById("pre").innerHTML = document.getElementById("script").innerHTML;
+</script>
+
+</html>

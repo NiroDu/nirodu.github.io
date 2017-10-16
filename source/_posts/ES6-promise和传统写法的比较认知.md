@@ -16,3 +16,8 @@ summary:
 
 > 先知思维的代码呈现就是Promise形式；当局者思维的代码呈现就是异步回调形式。
 
+看代码示例：
+
+[Promise形式DEMO](/unrender/JSEnhance/promise/marriage_promise.html)
+
+[异步回调形式DEMO](/unrender/JSEnhance/promise/marriage_tradition.html)
