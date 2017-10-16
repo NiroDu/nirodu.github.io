@@ -5,8 +5,9 @@ layout: post
 comments: true
 tags: [Travis]
 categories: [前端]
-keywords: 前端
+keywords:
 description:
+summary: 
 ---
 使用Travis自动化构建+部署可让我们摆脱对Hexo本机环境的依赖，实现不管在哪台电脑上都可以实时更新自己的博客。
 

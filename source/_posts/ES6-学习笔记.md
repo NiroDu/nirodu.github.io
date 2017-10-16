@@ -1,5 +1,5 @@
 ---
-title: ES6学习笔记
+title: ES6 学习笔记
 tags:
   - ES6
   - Javascript
