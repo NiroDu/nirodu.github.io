@@ -10,5 +10,6 @@ description:
 summary: 
 ---
 
+[Jade —— 源于 Node.js 的 HTML 模板引擎](https://segmentfault.com/a/1190000000357534)
 
 [Jade Syntax Documentation](http://naltatis.github.io/jade-syntax-docs/#attributes)
