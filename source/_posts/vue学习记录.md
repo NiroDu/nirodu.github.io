@@ -73,12 +73,21 @@ $ npm run dev
   }
 ```
 
+> PS:
+This boilerplate has pre-configured CSS extraction for most popular CSS pre-processors including LESS, SASS, Stylus, and PostCSS. To use a pre-processor, all you need to do is installing the appropriate webpack loader for it. For example, to use SASS:
+```bash
+npm install sass-loader node-sass --save-dev
+```
+> Note you also need to install node-sass because sass-loader depends on it as a peer dependency.
+
+
+
 
 [learn_project Demo](/source/unrender/vue_project/learn_project)
 [vue-cli 文档介绍](http://vuejs-templates.github.io/webpack/)
-[Vue2.0 新手入门 — 从环境搭建到发布](http://www.runoob.com/w3cnote/vue2-start-coding.html)
 
-
+[TODO Demo](https://codesandbox.io/s/o29j95wx9)
+[ECMAScript 2015 Features](https://babeljs.io/learn-es2015/#ecmascript-2015-features)
 [vue-loader 中文文档](https://vue-loader.vuejs.org/zh-cn/)
 [vuex 中文文档](https://vuex.vuejs.org/zh-cn/)
 [vue-router 中文文档](https://router.vuejs.org/zh-cn/)
