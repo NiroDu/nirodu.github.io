@@ -106,3 +106,6 @@ admin:
     secret: nirodu
     expire: 60*1
     # cors: http://localhost:3000
+
+server:
+  compress: true

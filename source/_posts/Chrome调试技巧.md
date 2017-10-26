@@ -45,3 +45,6 @@ console.warn：警示信息
 - Pause on exceptions：异常情况自动断点设置。
 
 <img src="/img/chromeTips/2.gif" alt="">
+
+## 快捷键
+`⌘+⌥+j`，唤出浏览器控制台。

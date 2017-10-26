@@ -15,6 +15,8 @@ Hexo预备式。
 
 [Hexo文档链接](https://hexo.io/zh-cn/docs/index.html) 
 
+## 常用命令
+
 ### Create a new post
 
 ``` bash
@@ -66,6 +68,7 @@ $ hexo clean
 $ hexo publish post <filename>
 ```
 
+## 使用技巧/问题解决
 
 ### skip_render
 > **跳过指定文件的渲染，可使用 [glob](https://github.com/isaacs/node-glob) 表达式来匹配路径。**
@@ -97,10 +100,18 @@ skip_render:
     - test/*
 ```
 
+#### 问题:本地server运行时文章尾部中文乱码
 
-### 插件
+在`_config.yml`设置启用压缩可以避免这个问题。
 
-#### [hexo-admin](https://github.com/jaredly/hexo-admin) (一个本地可视化的markdown编辑器)
+``` yml
+server:
+  compress: true
+```
+
+## 插件
+
+### [hexo-admin](https://github.com/jaredly/hexo-admin) (一个本地可视化的markdown编辑器)
 进入hexo根目录执行:
 ```bash
 $ npm install --save hexo-admin
