@@ -313,10 +313,12 @@ a:hover, a:active {
 		a {
 			text-decoration: none;
 			letter-spacing: 1px;
-			color: #4786D6;
+			color: #42b983;
+			font-weight: 500;
+			margin: 0 4px;
 		}
 		a:hover{
-			color: #2F69B3;
+			color: #38a674;
 		}
 		h3{
 			color: #5F5F5F;
@@ -778,9 +780,6 @@ a.btn {
 	}
 	.footer{
 		display: none;
-	}
-	.share{
-		display: grid;
 	}
 
 }
