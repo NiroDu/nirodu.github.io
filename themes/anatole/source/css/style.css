@@ -223,13 +223,6 @@ a:hover, a:active {
     margin: 0 4px; }
   .post .post-content a:hover {
     color: #38a674; }
-  .post .post-content h3 {
-    color: #5F5F5F;
-    font-size: 22px;
-    font-weight: 600; }
-  .post .post-content h4 {
-    color: #5F5F5F;
-    font-size: 16px; }
   .post .post-footer {
     padding: 0 0 30px 0;
     border-bottom: 1px solid #f2f2f2; }
