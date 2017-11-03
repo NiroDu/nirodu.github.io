@@ -3,7 +3,7 @@ html {
 	-webkit-font-smoothing: antialiased;
 }
 
-body {
+html,body {
 	color: rgba(0, 0, 0, 0.5);
 	font-family: 'PingHei', 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif;
 	font-size: 15px;
@@ -13,7 +13,7 @@ body {
 
 }
 p {
-	line-height: 1.9em;
+	line-height: 1.9rem;
 	font-weight: 400;
 	font-size: 14px;
 }
@@ -30,7 +30,6 @@ a:link, a:visited {
 	-ms-transition: all .15s linear;
 	transition: all .15s linear;
 	color: #424242;
-
 }
 
 a:hover, a:active {
@@ -316,7 +315,8 @@ a:hover, a:active {
 			letter-spacing: 1px;
 			color: #42b983;
 			font-weight: 500;
-			margin: 0 4px;
+			font-size: .9rem;
+			// margin: 0 4px;
 		}
 		a:hover{
 			color: #38a674;
@@ -505,7 +505,7 @@ a:hover, a:active {
 		font-size: 24px;
 		color: #666666;
 		font-weight: 600;
-		line-height: 2.2em;
+		line-height: 2.2rem;
 	}
 	.listing{
         padding: 0;
@@ -642,7 +642,7 @@ a.btn {
 	white-space: nowrap;
 	font-weight: 400;
 	font-style: normal;
-	border-radius: 999em;
+	border-radius: 999rem;
 }
 
 .btn:hover {
@@ -659,22 +659,22 @@ a.btn {
 	white-space: nowrap;
 	font-weight: 400;
 	font-style: normal;
-	border-radius: 999em;
+	border-radius: 999rem;
 }
 
 [role="back"] {
-	padding: 0.5em 1.25em;
-	line-height: 1.666em;
+	padding: 0.5rem 1.25rem;
+	line-height: 1.666rem;
 }
 
 [role="home"] {
-	padding: 0.5em 1.25em;
-	line-height: 1.666em;
+	padding: 0.5rem 1.25rem;
+	line-height: 1.666rem;
 }
 
 [role="navigation"] {
-	padding: 0.5em 1.25em;
-	line-height: 1.666em;
+	padding: 0.5rem 1.25rem;
+	line-height: 1.666rem;
 }
 
 [role="tags"] {
@@ -695,7 +695,7 @@ a.btn {
 			 a {
 				display: inline-block;
 				position: relative;
-				padding: 0.5em 1.25em;
+				padding: 0.5rem 1.25rem;
 				outline: 0;
 				color: rgba(0, 0, 0, 0.44);
 				background: rgba(0, 0, 0, 0);
@@ -707,12 +707,12 @@ a.btn {
 				white-space: nowrap;
 				font-weight: 400;
 				font-style: normal;
-				border-radius: 999em;
+				border-radius: 999rem;
 				margin-top: 5px;
 
 				 &:hover{
-					 position: relative;
-					padding: 0.5em 1.25em;
+					position: relative;
+					padding: 0.5rem 1.25rem;
 					outline: 0;
 					color: #fff;
 					background: #3CBD10;
@@ -724,7 +724,7 @@ a.btn {
 					white-space: nowrap;
 					font-weight: 400;
 					font-style: normal;
-					border-radius: 999em;
+					border-radius: 999rem;
 					margin-top: 5px;
 				 }
 			}

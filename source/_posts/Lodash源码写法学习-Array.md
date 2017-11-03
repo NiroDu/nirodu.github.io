@@ -9,6 +9,42 @@ description:
 summary: Lodash源码写法学习 - Array部分
 ---
 
+### _.slice(array, [start=0], [end=array.length])
+> Creates a slice of array from start up to, but not including, end. (将旧数组按指定的 start 和 end 的位置截取成新数组)
+
+```js
+function slice(array, start, end) {
+  let length = array == null ? 0 : array.length
+  if (!length) {
+    return []
+  }
+  start = start == null ? 0 : start
+  end = end === undefined ? length : end
+
+  if (start < 0) {
+    start = -start > length ? 0 : (length + start)
+  }
+  end = end > length ? length : end
+  if (end < 0) {
+    end += length
+  }
+  length = start > end ? 0 : ((end - start) >>> 0)
+  start >>>= 0
+
+  let index = -1
+  const result = new Array(length)
+  while (++index < length) {
+    result[index] = array[index + start]
+  }
+  return result
+}
+```
+运行：
+```js
+slice([1,2,3,4,5,6],2,6)
+// [ 3, 4, 5, 6 ]
+```
+
 ### `_.chunk(array, [size=1])`
 > Creates an array of elements split into groups the length of size. If array can't be split evenly, the final chunk will be the remaining elements. （指定一个size，将旧数组以该size为长度单位拆分为多个数组，并将其合并成一个新的大数组。若数组不能均匀分割，剩余的元素组成最后一个小数组）
 
@@ -60,9 +96,9 @@ function chunk(array, size) {
 运行：
 ```js
 chunk(['a', 'b', 'c', 'd'], 2);
-// (2) [Array(2), Array(2)]
+// [ [ 'a', 'b' ], [ 'c', 'd' ] ]
 chunk(['a', 'b', 'c', 'd',3,"haha","last chunk"], 3);
-// (3) [Array(3), Array(3), Array(1)]
+// [ [ 'a', 'b', 'c' ], [ 'd', 3, 'haha' ], [ 'last chunk' ] ]
 ```
 
 
@@ -89,5 +125,5 @@ function compact(array) {
 运行：
 ```js
 compact([0, 1, false, 2, '', 3]);
-// (3) [1, 2, 3]
+// [ 1, 2, 3 ]
 ```
