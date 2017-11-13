@@ -9,6 +9,8 @@ description:
 summary: Lodash源码写法学习 - Array部分
 ---
 
+[TOC]
+
 ### _.slice(array, [start=0], [end=array.length])
 > Creates a slice of array from start up to, but not including, end. (将旧数组按指定的 start 和 end 的位置截取成新数组)
 
@@ -125,7 +127,7 @@ compact([0, 1, false, 2, '', 3]);
 
 ### `_.differenceBy(array, [values], [iteratee=_.identity])` (保留)
 > This method is like _.difference except that it accepts iteratee which is invoked for each element of array and values to generate the criterion by which they're compared. The order and references of result values are determined by the first array. The iteratee is invoked with one argument:
-### `_.differenceWith(array, [values], [comparator]) (保留)`
+### `_.differenceWith(array, [values], [comparator])` (保留)
 > This method is like _.difference except that it accepts comparator which is invoked to compare elements of array to values. The order and references of result values are determined by the first array. The comparator is invoked with two arguments: (arrVal, othVal).
 
 ### `_.drop(array, [n=1])`
@@ -167,9 +169,16 @@ function dropRight(array, n=1) {
 dropRight([1, 2, 3], 2);
 // [ 3 ]
 ```
-### `_.dropRightWhile(array, [predicate=_.identity])`
+### `_.dropRightWhile(array, [predicate=_.identity])` (保留)
 > Creates a slice of array excluding elements dropped from the end. Elements are dropped until predicate returns falsey. The predicate is invoked with three arguments: (value, index, array). ()
 
+### `_.dropWhile(array, [predicate=_.identity])` (保留)
+> Creates a slice of array excluding elements dropped from the beginning. Elements are dropped until predicate returns falsey. The predicate is invoked with three arguments: (value, index, array).
+
+### `_.fill(array, value, [start=0], [end=array.length])`
+> Fills elements of array with value from start up to, but not including, end. (用指定的值填充数组，从 start 到 end 的位置，但不包括 end 本身的位置。 )
+
 ```js
+
 
 ```
