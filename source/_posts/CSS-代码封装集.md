@@ -140,3 +140,21 @@ p {
 }
 ```
 Demo: http://jsfiddle.net/Cople/ash5v/
+
+#### 类的通配
+
+```css
+[class*="col-"] {
+    background-color: #fff;
+}
+```
+#### 三角形
+```css
+.three {
+    border-color: transparent transparent #717171 transparent;
+    border-width: 0 200px 200px 200px;
+    border-style: solid;
+    height: 0;
+    width: 0;
+}
+```
