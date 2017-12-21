@@ -7,6 +7,7 @@ tags: [Hexo]
 categories: [前端]
 keywords: 前端
 description:
+summary: Hexo预备式。
 ---
 
 Hexo预备式。

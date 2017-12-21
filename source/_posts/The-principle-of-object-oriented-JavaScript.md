@@ -6,7 +6,10 @@ comments:
 categories:
 keywords:
 description:
-summary:
+summary: 《The principle of object-oriented JavaScript》读书笔记
+password: Nirooo
+abstract: 
+message: 
 ---
 
 # 原始类型和引用类型

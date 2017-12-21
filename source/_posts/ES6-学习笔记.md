@@ -6,7 +6,7 @@ tags:
 categories:
   - 前端
 date: 2017-08-30 19:27:57
-summary: 
+summary: 关于ES6的常用语法参考。
 ---
 
 关于ES6的常用语法参考。

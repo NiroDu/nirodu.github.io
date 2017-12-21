@@ -9,8 +9,6 @@ description:
 summary: Lodash源码写法学习 - Array部分
 ---
 
-[TOC]
-
 ### _.slice(array, [start=0], [end=array.length])
 > Creates a slice of array from start up to, but not including, end. (将旧数组按指定的 start 和 end 的位置截取成新数组)
 

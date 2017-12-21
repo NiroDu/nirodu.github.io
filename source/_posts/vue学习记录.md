@@ -6,7 +6,10 @@ comments:
 categories:
 keywords:
 description:
-summary:
+summary: Vue学习过程。
+password: Nirooo
+abstract: 
+message: 
 ---
 
 ### 安装vue脚手架

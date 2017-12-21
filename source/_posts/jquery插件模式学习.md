@@ -6,7 +6,10 @@ tags: [Jquery]
 categories: [前端]
 keywords: 
 description:
-summary: 
+summary: （学习编写Jquery插件 = =
+password: Nirooo
+abstract: 
+message: 
 ---
 
 （学习编写Jquery插件 = =

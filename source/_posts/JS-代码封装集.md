@@ -7,7 +7,7 @@ tags: [js]
 categories: [前端]
 keywords: 
 description:
-summary: 
+summary: 一些常用的JS片段。
 ---
 
 (正在整理中..

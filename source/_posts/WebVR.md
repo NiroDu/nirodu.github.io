@@ -20,9 +20,6 @@ VR 应用需要高精度、低延迟的接口，才能传递一个可接受的�
 WebVR API 目前可用于安装了 Firefox nightly 的 Oculus Rift、Chrome 的实验性版本和 Samsung Gear VR 的浏览器。当然，如果你现在就想在你的移动端浏览器体验 WebVR，可以使用 [WebVR Polyfill](https://github.com/googlevr/webvr-polyfill) 
 
 
-
-
-
 ## WebVR 开发
 在 Web 上开发 VR 应用，有下面三种（潜在）方式：
 - JavaScript, Three.js 与 监听设备方向（Device Orientation）

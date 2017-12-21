@@ -3,10 +3,13 @@ title: vue-music-player学习
 date: 2017-11-28 10:49:55
 tags:
 comments:
-categories:
+categories: 
 keywords:
-description:
-summary:
+description:  
+summary: 关于vue-music的学习过程...
+password: Nirooo
+abstract: 
+message: 
 ---
 
 3. 在vue将元素挂载到dom上之后, 浏览器要去将元素渲染出来, 那个20ms就是给浏览器20ms的渲染时。

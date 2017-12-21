@@ -7,7 +7,7 @@ tags: [css]
 categories: [前端]
 keywords:
 description:
-summary: 
+summary: 一些常用的CSS代码片段。
 ---
 
 (正在整理中..
