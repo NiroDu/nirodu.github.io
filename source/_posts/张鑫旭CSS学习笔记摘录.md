@@ -15,6 +15,8 @@ message:
 
 对张鑫旭文章的一些读书笔记。
 
+[PNG格式小图标的CSS任意颜色赋色技术](http://www.zhangxinxu.com/wordpress/2016/06/png-icon-change-color-by-css/)
+
 <!-- more -->
 
 - 浮动直接将元素的inline boxes破坏了，于是这些元素没有了高度。无inline box -> 无line box -> 无高度

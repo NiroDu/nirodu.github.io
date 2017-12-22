@@ -119,3 +119,6 @@ $ npm install --save hexo-admin
 $ hexo server -d
 $ open http://localhost:4000/admin/
 ```
+
+## 如何写一个Hexo主题
+[Create an Hexo Theme](http://www.codeblocq.com/2016/03/Create-an-Hexo-Theme-Part-1-Index/)
