@@ -1,5 +1,5 @@
 ---
-title: Hexo 初入记载
+title: Hexo初入记载
 date: 2017-03-10 17:17:18
 layout: post
 comments: true
