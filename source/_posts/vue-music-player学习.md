@@ -11,9 +11,26 @@ password: Nirooo
 abstract: 
 message: 
 ---
+**1.  `class` 规范，要首字母大写。如：**
+```js
+import MHeader from 'components/m-header/m-header'
+```
+中的 `MHeader`，它是一个类的形式。
 
-在vue将元素挂载到dom上之后, 浏览器要去将元素渲染出来, 那个20ms就是给浏览器20ms的渲染时。
+**2. `this.slider` 是在vue对象里声明new了一个 BScroll 变量**
+```js
+this.slider = new BScroll(this.$refs.slider, {
+          scrollX: true,
+          scrollY: false,
+          momentum: false,
+          snap: true,
+          snapLoop: this.loop,
+          snapThreshold: 0.3,
+          snapSpeed: 400
+})
+```
 
+**3. 在vue将元素挂载到dom上之后, 浏览器要去将元素渲染出来, 那个20ms就是给浏览器20ms的渲染时。**
 ```js
 mounted() {
     setTimeout(() => {
