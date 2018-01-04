@@ -27,7 +27,7 @@ summary: 一些常用的CSS代码片段。
 
 5、列表元素可继承：list-style、list-style-type、list-style-position、list-style-image。
 
-
+6、表格元素可继承：border-collapse。
 #### **二、不定高垂直居中(灵活的不限定子元素高度)**
 
 1、表格方式
