@@ -25,11 +25,15 @@ $ git add .  #添加全部
 
 $ git commit -m "代码提交信息"  #把改动提交到 HEAD，但还没提交到到的远端仓库
 
+$ git tag <name>
+
 $ git pull  #从远程获取最新版本并merge到本地
 
 $ git push  #将改动提交到远端仓库
 
 $ git log  #查看记录
+
+$ git log --pretty=oneline #查看记录(精简版)
 ```
 
 ## **分支操作**
@@ -84,6 +88,8 @@ $ git reset --hard HEAD~3  #回退三个commit
 $ git reset --hard <hash>  #回滚到指定的版本
 
 $ git commit --amend # 修改最后一次提交
+
+$ git reflog #查看命令历史
 ```
 
 ## **删除操作**
