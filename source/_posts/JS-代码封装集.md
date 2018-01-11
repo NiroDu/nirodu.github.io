@@ -253,3 +253,16 @@ return false 之后的所有相关的触发事件和动作都不会被执行。
     });
 
 ```
+
+#### 安卓机弹框 软键盘挡住输入框问题修复
+```js
+  if(/Android/.test(navigator.appVersion)) {
+    window.addEventListener("resize", function() {
+       if(document.activeElement.tagName=="INPUT" || document.activeElement.tagName=="TEXTAREA") {
+          window.setTimeout(function() {
+             document.activeElement.scrollIntoViewIfNeeded();
+          },0);
+       }
+    })
+ }
+```
