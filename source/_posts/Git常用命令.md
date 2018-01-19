@@ -25,8 +25,6 @@ $ git add .  #添加全部
 
 $ git commit -m "代码提交信息"  #把改动提交到 HEAD，但还没提交到到的远端仓库
 
-$ git tag <name>
-
 $ git pull  #从远程获取最新版本并merge到本地
 
 $ git push  #将改动提交到远端仓库
@@ -34,6 +32,14 @@ $ git push  #将改动提交到远端仓库
 $ git log  #查看记录
 
 $ git log --pretty=oneline #查看记录(精简版)
+
+$ git log --pretty=oneline --abbrev-commit  #查看记录(精简版 - commitID 只后六位)
+
+$ git tag <name> #在当前分支打新标签，默认标签是打在最新提交的commit上的。
+
+$ git tag #查看所有标签
+
+$ git push origin --tags #一次性推送全部尚未推送到远程的本地标签
 ```
 
 ## **分支操作**
@@ -53,6 +59,25 @@ $ git branch -d <branch>  #删除分支
 $ git branch -D <branch>  # 强制删除分支
 
 $ git push origin --delete <branch>  # 删除一个远程分支
+```
+
+## **标签操作**
+```bash
+$ git tag <name> #在当前分支打新标签，默认标签是打在最新提交的commit上的。
+
+$ git tag <tagname> <commitID后六位> #指定commit打标签，先查看log记录获取commitID后六位
+
+$ git tag #查看所有标签
+
+$ git show <tagname> #查看标签信息
+
+$ git tag -d <tagname> #删除标签(只是本地)
+
+$ git push origin :refs/tags/<tagname> #删除远端标签（先从本地删除，再执行远端删除）
+
+$ git push origin <tagname> #推送某个标签到远程
+
+$ git push origin --tags #一次性推送全部尚未推送到远程的本地标签
 ```
 
 ## **撒销操作**
