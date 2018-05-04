@@ -80,7 +80,7 @@ pagination_dir: page #分页文件夹名称
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
 # theme: hiker
-theme: anatole
+theme: apollo
 
 archive_generator:
     per_page: 0

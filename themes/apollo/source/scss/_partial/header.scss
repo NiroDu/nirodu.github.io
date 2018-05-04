@@ -1,8 +1,11 @@
 header {
     min-height: 60px;
-
+    font-size: 0;
     .logo-link {
         float: left;
+        width: 90px;
+        position: relative;
+        top: -12px;
     }
     
     .nav {
@@ -11,7 +14,7 @@ header {
     }
 
     .logo-link img {
-        height: 60px;
+        width: 100%;
     }
 
     .nav-list-item {

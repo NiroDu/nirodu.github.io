@@ -1,21 +1,21 @@
 menu:
     Blog: /
     Archive: /archives/
-    # Resume: /resume/
-    Collect: /collect/
-    GitHub: https://github.com/nirodu
+    Weibo: http://weibo.com/sunchongsheng
+    GitHub: https://github.com/pinggod
+    Rss: /atom.xml
 
-favicon: /favicon-1.png
+favicon: /favicon.png
 logo: /favicon.png
 
 # Comment
 # e.g disqus: seansun
-disqus: 
+disqus:
 duoshuo:
 
 # Analytics
 # google-analytics:
-# ga: UA-65933410-1
+# ga: UA-xxxxxxxx-x
 
 # Copyright Infomation
-startyear: 2017
+startyear: 2015

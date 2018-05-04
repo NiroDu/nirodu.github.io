@@ -23,13 +23,13 @@ main.container {
             float: none;
             display: block;
             text-align: center;
+            margin: 0 auto;
         }
         li.nav-list-item {
             padding: 10px 10px;
         }
     }
     main.container,
-    .home.post-list,
     .archive {
         margin-top: 0;
     }
