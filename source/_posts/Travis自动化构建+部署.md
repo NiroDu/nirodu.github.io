@@ -12,9 +12,6 @@ summary: Travis自动化构建+部署 Hexo博客
 使用Travis自动化构建+部署可让我们摆脱对Hexo本机环境的依赖，实现不管在哪台电脑上都可以实时更新自己的博客。
 
 <!-- more -->
-<div class="tip">
-  在这里写一些重要的事情 / Something important...
-</div>
 ## **自动化构建+部署：**
 
 Travis 会在你每一次提交之后生成一个虚拟机来执行我们编写的脚本任务，脚本执行的内容会写在`.travis.yml`文件中。
@@ -25,7 +22,7 @@ Travis 会在你每一次提交之后生成一个虚拟机来执行我们编写�
 
 在操作前需要先熟悉三个方面的知识点。
 ### **1、HEXO命令**
-可在此了解 <a href="/2017/03/10/hello-world/" target="_blank">Hexo 初入记载</a>
+可在此了解 <a href="/2017/03/10/Hexo初入记载/" target="_blank">Hexo 初入记载</a>
 
 ### **2、GIT命令**
 可在此了解 <a href="http://www.ruanyifeng.com/blog/2014/06/git_remote.html" target="_blank">Git远程操作详解</a>
