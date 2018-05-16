@@ -24,7 +24,6 @@ summary: 记录一下关于Script脚本异步加载相关的问题。
 有 defer，加载后续文档元素的过程将和 script.js 的加载并行进行（异步），但是 script.js 的执行要在所有元素解析完成之后，DOMContentLoaded 事件触发之前完成。
 
 
-
 ## 事件DOMContentLoaded和load的区别
 
 **DOM文档加载的步骤为:**

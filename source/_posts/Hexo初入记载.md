@@ -101,6 +101,11 @@ skip_render:
     - test/*
 ```
 
+### 更新hexo-cli
+```bash
+npm install hexo-cli -g
+```
+
 #### 问题:本地server运行时文章尾部中文乱码
 
 在`_config.yml`设置启用压缩可以避免这个问题。

@@ -7,6 +7,7 @@ categories:
 keywords:
 description:
 summary: 关于Git的常用命令记载。
+password: Nirooo
 ---
 
 ## **基本命令**
