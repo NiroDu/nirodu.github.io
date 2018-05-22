@@ -1,5 +1,5 @@
 ---
-title: ✡ Travis自动化构建+部署
+title: ✡ Hexo 使用 Travis 自动化构建+部署
 date: 2017-06-11 09:38:00
 layout: post
 comments: true
@@ -9,14 +9,16 @@ keywords:
 description:
 summary: Travis自动化构建+部署 Hexo博客
 ---
-使用Travis自动化构建+部署可让我们摆脱对Hexo本机环境的依赖，实现不管在哪台电脑上都可以实时更新自己的博客。
+
+把本地构建和部署的工作交给线上的 [Travis](https://travis-ci.org/) 的服务器去做，实现不管在哪台电脑上都可以直接从仓库下载源码去编辑，实时更新自己的博客。
 
 <!-- more -->
-## **自动化构建+部署：**
 
-Travis 会在你每一次提交之后生成一个虚拟机来执行我们编写的脚本任务，脚本执行的内容会写在`.travis.yml`文件中。
+## **自动化构建+部署概述：**
 
-这样只要你使用 git 提交了更改，就可以让 Travis 在线上替你执行 `Hexo g`+`Hexo d` 的命令，如此一来，我们在不同的电脑上想要写博客，只需使用 Markdown 工具写好 `.md` 文件，使用git上传博客的源文件，其他的就交给 Travis ，过几分钟便会自动部署好你的博客内容，完成更新上线。
+Travis 会在你每一次 git 提交之后会生成一个虚拟环境来执行我们编写的脚本任务，脚本执行的内容写在`.travis.yml`文件中。
+
+这样只要你使用 git 提交了更改，就可以让 Travis 在线上替你执行 `Hexo generate`+`Hexo deploy` 的命令，如此一来，我们在不同的电脑上想要编辑博客，只需使用 Markdown 工具写好 `.md` 文件，使用 git 上传博客的源文件，其他的就交给 Travis，让它去获取 github 仓库上代码的更新并拉取，执行脚本任务：“部署博客内容，并完成更新上线。”
 
 ## **基础知识**
 
@@ -30,10 +32,12 @@ Travis 会在你每一次提交之后生成一个虚拟机来执行我们编写�
 ### **3、SSH Key**
 可在此了解 <a href="/2017/06/03/SSH-key/" target="_blank">SSH Key浅析</a>
 
-## **概述**
+## **前提**
+在 github 仓库创建两个分支: 一个 `master`(用于部署，hexo构建后的网页代码) 和一个 `dev`(用于构建，博客的源码)。
+
 ![Branch](/img/Travis/branch.png)
 
-**以下配置都以 MAC OSX系统 为环境进行配置。** 
+**以下配置都以 MAC OSX 系统为环境进行配置。** 
 
 ## **第一步、配置SSH密钥**
 
@@ -41,10 +45,9 @@ Travis 会在你每一次提交之后生成一个虚拟机来执行我们编写�
 
 > 使用SSH Key可免去在Github上Hexo部署时得输入密码，但要注意的是，这个SSH key不应是github账号的全局SSH key，因为这样Travis CI就获得了你所有代码库的提交权限。
 
+应该使用 **单个项目的ssh密钥**，添加至`https://github.com/用户名/项目名/settings/keys`的 Deploy keys，这样就限制了Travis CI的权限。
 
-应该使用 **单独ssh密钥**，添加至`https://github.com/用户名/项目名/settings/keys`的Deploy keys，这样就控制了Travis CI的权限。
-
-生成单独ssh密钥命令：
+生成单个项目的ssh密钥命令：
 ```BASH
 $ cd ~/.ssh
 $ ssh-keygen -t rsa -C "nirodu1219@outlook.com"
@@ -64,9 +67,9 @@ Enter same passphrase again:
 然后会在`.ssh/`目录下生成`id_rsa_forTravic`和`id_rsa_forTravic.pub`两个文件。
 <br>
 
-### (二)  添加SSH Key到项目的Deploy keys
-登录到github中，点击进入到博客仓库。
-点击右上方的Settings进入到设置页面，点击左边的Deploy keys项。
+### (二)  添加 SSH Key 到项目的 Deploy keys
+登录到 github 中，进入到博客仓库。
+点击右上方的 `Settings` 进入到设置页面，再点击左侧 `Deploy keys` 项。
 
 给 **Title** 取个名字，打开`id_rsa_forTravic.pub`文件，复制里面的内容到**Key文本框**，勾选 **Allow write access**，点击 **Add key** 确认添加。
 
@@ -74,10 +77,10 @@ Enter same passphrase again:
 
 <br>
 
-### (三) 新建配置文件
+### (三) 新建 SSH 配置文件
 然后在 `.ssh/` 文件夹中创建一个名为 `config` 的配置文件。
 
-> **config 配置的作用：**
+> **配置 config 的作用：**
 为不同网站应用各自的 SSH KEY。
 
 ```BASH
@@ -100,30 +103,30 @@ PreferredAuthentications publickey
 IdentityFile ~/.ssh/id_rsa_forTravic
 ```
 
-提示：这里的密钥文件路径根据自己的做相应修改，再把对应的公钥添加至对应的网站上面。
-未加入配置文件的网站会自动应用`id_rsa`。
+提示：这里的密钥文件会根据配置相应修改，把对应的公钥添加至对应的网站（host）上面。
+未加入配置文件的网站会自动应用默认的`id_rsa`。
 
-## **第二步、配置Travis**
+## **第二步、配置 Travis**
 
 ### (一) Travis CI 官网配置
 打开[Travis CI](https://travis-ci.org/)，使用github账号登录。
 
-跟着Travis官网的提示，添加一个Repositories，找到博客项目，开启travis支持。
+跟着 Travis 官网的提示，添加一个 Repositories，找到博客项目，开启 travis 支持。
 
 ![Add repositories](/img/Travis/add_repositories.png)
 
 然后点击设置按钮，在项目的设置中开启 `Build only if .travis.yml is present`.
 
-### (二) 用 Travis CI 加密 SSH
+### (二) 本地 Travis CI 操作
 
-**（ 1 ）**首先打开终端，安装travis（要先安装好Ruby和gem环境）。
+**（ 1 ）首先打开终端，安装travis（要先安装好Ruby和gem环境）。**
 
 ```BASH
 $ gem install travis
 ```
 <br>
 
-**（ 2 ）**然后到博客项目文件夹，在**项目根目录**新建 `.travis.yml` 配置文件。
+**（ 2 ）然后到博客项目文件夹，在**项目根目录**新建 `.travis.yml` 配置文件。**
 
 ```BASH
 $ cd 博客项目文件夹根目录
@@ -141,7 +144,7 @@ $ killall Finder
 即可显示系统隐藏文件，若想继续隐藏则把 "YES" 改成 "NO" 就行。
 <br>
 
-**（ 3 ）**在博客项目文件夹，在**项目根目录**创建`.travis`文件夹。
+**（ 3 ）在博客项目文件夹，在**项目根目录**创建`.travis`文件夹。**
 ```BASH
 $ mkdir .travis
 ```
@@ -155,9 +158,6 @@ $ cp ~/.ssh/id_rsa_forTravic .travis/
 ```BASH
 $ touch .travis/ssh_config
 ```
-<div class="tip">
-这个配置文件，是在线上Travis虚拟机构建过程中使用的，路径不是本地机的，是以Travis虚拟机为根目录的路径。所以路径和名字可大胆命名为  `~/.ssh/id_rsa`
-</div>
 
 编辑配置文件，添加如下内容：
 ```
@@ -167,9 +167,12 @@ StrictHostKeyChecking no
 IdentityFile ~/.ssh/id_rsa
 IdentitiesOnly yes
 ```
-<br>
 
-**（ 4 ）**Travis 加密操作
+<div class="tip">
+这个配置文件，是在线上 Travis 虚拟环境构建过程中使用的，路径不是本地机的，是以Travis虚拟机为根目录的路径。所以路径和名字可大胆命名为  `~/.ssh/id_rsa`
+</div>
+
+**（ 4 ）Travis 加密操作**
 > 要加密的原因很简单，Travis 需要取得足够的权限才能对 Github仓库 进行操作，我们在博客仓库里添加过一个公钥 `id_rsa_forTravic.pub`，Travis需要取得私钥 `id_rsa_forTravic` 才能通过认证，进行构建部署。而假如直接把私钥文件上传到开源的Github上，被别人下载到未加密的私钥文件，那这个仓库的控制权就是共享的了...
 
 首先是用终端登录Travis账号，再使用命令对私钥进行加密。

@@ -17,6 +17,7 @@ summary:
 ## 生成 SSH KEY
 ```
 $ ssh-keygen -t rsa -C "your_email@example.com"
+
 Generating public/private rsa key pair.
 Enter file in which to save the key (/Users/your_user_directory/.ssh/id_rsa):
 Enter passphrase (empty for no passphrase):
@@ -25,6 +26,9 @@ Enter same passphrase again:
 
 your_email@example.com 改成自己的邮箱。
 
+输入文件名，如果直接按回车则会默认自动生成私钥和公钥：id_rsa、id_rsa.pub。
+
+接着跟着的是输入密码和确认密码。
 密码输入成功后出现如下提示，表示创建成功：
 ```
 Your identification has been saved in /Users/your_user_directory/.ssh/id_rsa.
@@ -37,17 +41,17 @@ The key's randomart image is:
  | =oO. |
  ...
 ```
-注解：这里第一次输入的是文件名，如果直接按回车则会自动生成私钥和公钥：id_rsa、id_rsa.pub。后面跟着的是密码和确认密码。
-上方的命令执行多次则会生成多个 SSH KEY。
+**注意：
+上方的命令执行多次则会生成多个 SSH KEY 文件。如下：**
 
 ## 生成多个SSH KEY的操作方式：
-新建第一个 SSH key：
+### 新建第一个 SSH key：
 ```
 $ ssh-keygen -t rsa -C "user1@email.com"
 ```
 一路回车即可，选择默认路径(~/.ssh)
 
-新建第二个 SSH key
+### 新建第二个 SSH key
 ```
 $ ssh-keygen -t rsa -C "user2@email.com"
 # 设置名称为Enter file in which to save the key (/c/Users/Administrator/.ssh/id_rsa): /指定一个路径/id_rsa_user2名称
@@ -58,7 +62,33 @@ $ ssh-keygen -t rsa -C "user2@email.com"
 $ cat ~/.ssh/id_rsa.pub
 ssh-rsa 公开密钥的内容 your_email@example.com
 ```
-如果创建时输入了文件名，上方的id_rsa替换成文件名。
+如果创建时输入了文件名，上方的`id_rsa`替换成文件名。
+
+## 为不同网站应用各自的 SSH KEY
+在 ~/.ssh 目录下创建 config 文件：
+```
+$ vim ~/.ssh/config
+```
+
+输入以下信息：
+```
+# 第一个host
+Host github.com
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_rsa_a
+
+# 第二个host
+Host git.xxxxxx.com
+    HostName git.xxxxxx.net
+    User git
+    IdentityFile ~/.ssh/id_rsa_b
+```
+
+再把对应的公钥添加至对应的网站上面。
+注解：未加入配置文件的网站会自动应用id_rsa。
+至此，多个 SSH KEY 就可以同时使用了。
+
 
 
 ## GIT CONFIG
@@ -83,30 +113,5 @@ $ cd your_project
 $ git config user.name "Firstname Lastname"
 $ git config user.email "your_email@example.com"
 ```
-这个命令会在项目目录下输出文件：/.git／.config
+这个命令会在项目目录下输出文件：/.git／config
 这里设置的姓名和邮箱地址会用在 Git 的提交日志中。
-
-
-## 为不同网站应用各自的 SSH KEY
-在 ~/.ssh 目录下创建 config 文件：
-```
-$ vim ~/.ssh/config
-```
-
-输入以下信息：
-```
-Host github.com
-    HostName github.com
-    User git
-    IdentityFile ~/.ssh/id_rsa_a
-
-Host git.oschina.net
-    HostName git.oschina.net
-    User git
-    IdentityFile ~/.ssh/id_rsa_b
-…
-```
-
-再把对应的公钥添加至对应的网站上面。
-注解：未加入配置文件的网站会自动应用id_rsa。
-至此，多个 SSH KEY 就可以同时使用了。
