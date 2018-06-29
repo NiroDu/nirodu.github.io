@@ -14,7 +14,6 @@ summary: 一些常用的CSS代码片段。
 
 <!-- more -->
 
-
 #### **一、CSS 哪些属性默认会继承, 哪些不会继承?**
 
 1、不可继承的：display、margin、border、padding、background、height、min-height、max-height、width、min-width、max-width、overflow、position、left、right、top、bottom、z-index、float、clear、table-layout、vertical-align、page-break-after、page-bread-before和unicode-bidi。 
