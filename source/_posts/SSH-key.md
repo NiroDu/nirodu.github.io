@@ -95,10 +95,12 @@ Host git.xxxxxx.com
 像 github 或者 gitlab 等网站都会要求验证身份。通常情况下配置一个全局信息就可以了，针对一些特殊情况，如果需要配置多个身份信息，可以为项目单独配置。
 
 **配置全局信息**
+
 ```
 $ git config --global user.name "Firstname Lastname"
 $ git config --global user.email "your_email@example.com"
 ```
+
 这个命令会在   ~/.gitconfig   填入以下信息：
 
 [user]
@@ -106,6 +108,12 @@ $ git config --global user.email "your_email@example.com"
   email = your_email@example.com
 
 如果需要修改信息，直接修改这个文件即可。
+
+另外，显示当前的git配置信息：
+
+```
+git config --list
+```
 
 **配置单独信息**
 ```
