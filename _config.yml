@@ -13,11 +13,11 @@ avatar: https://source.vipabc.com/ext/images/website/share/Niro.jpg
 # language: en
 timezone: Asia/Shanghai
 
-# URL
+# URL 让爬虫爬
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://nirodu.github.io/
+url: https://nirodu.com/
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :year:month/:title/
 permalink_defaults:
 
 # Directory
@@ -32,6 +32,7 @@ skip_render:
  - collect/**
  - resume/**
  - unrender/**
+ - google0a8274bf5c2f8666.html
 # - resume/** #不需要渲染的文件夹或文件夹,放在[]中
 
 # Writing
@@ -94,10 +95,12 @@ archive_generator:
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
+- type: git
   # repo: https://github.com/NiroDu/nirodu.github.io.git
   repo: git@github.com:NiroDu/nirodu.github.io.git
   branch: master
+
+- type: baidu_url_submitter
 
 # Admin
 admin:
@@ -124,3 +127,10 @@ encrypt:
                     </div>
 server:
   compress: true
+
+# 百度推送
+baidu_url_submit:
+  #count: 1 ## 提交最新的一个链接
+  host: www.nirodu.com # 在百度站长平台中注册的域名
+  token: Ybu38MJtrtWBBHHZ # 开心不开心
+  path: baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本文档里
