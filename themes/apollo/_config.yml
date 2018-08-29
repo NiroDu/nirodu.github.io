@@ -1,6 +1,7 @@
 menu:
     Blog: /
     Archive: /archives/
+    N-book: //nirodu.com/n-book
     GitHub: https://github.com/nirodu
     Rss: /atom.xml
 
