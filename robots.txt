@@ -1,0 +1,15 @@
+#hexo robots.txt
+User-agent: *
+
+Allow: /
+Allow: /archives/
+Allow: /categories/
+Allow: /about/
+
+
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+
+Sitemap: http://nirodu.com/sitemap.xml
+Sitemap: http://nirodu.com/baidusitemap.xml
