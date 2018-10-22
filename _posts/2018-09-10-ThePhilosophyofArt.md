@@ -17,7 +17,7 @@ tags:
 
 科林伍德反驳了 **Art As Craft **的说法，提出 **Art As Expression 理论**，并表述了他认为的什么才算是真正的艺术 (**Art Proper**)。这也是当我在面对艺术作品时，受其启发所采取的看法。
 # **Art As Craft（艺匠说）**
- 首先我们来了解下什么是艺匠说，这并不是某一位哲学家提出来的，而是古代希腊普遍认同的一种观点：
+首先我们来了解下什么是艺匠说，这并不是某一位哲学家提出来的，而是古代希腊普遍认同的一种观点：
 >Art, or art creation, is an endeavor to produce a premeditated end goal, usually a physical object of art or a certain mental state in people.
 >(艺术或艺术作品是将预想目标完成的一种有目的性的行动，通常是一种物理实体或是人的一种确切的精神状态)
 
@@ -29,30 +29,30 @@ tags:
 
 一般 Craft 都有着这么六种特点：（不感兴趣可直接跳到科林伍德的艺术表现主义）
 ## Six characters of Craft
-**1. means-end distinction**
+### **1. means-end distinction**
 >Craft always involves a distinction between means and end, each clearly conceived as something distinct from the other but related to it.
 
 对于一个 craftman 来说，**手段(means) 和目的(end) 是区分开的。** 手段是一种达成目的的东西或是行为，而目的是 craftman 所希望制作出来的东西。
 例如，一位铁匠希望打造一把铁剑，那么铁矿石和锻造时所需要的火力、捶打及所用的锤子，都是手段，是为了达成最后的目的：这一把铁剑。
 
-**2. plan-execution distinction**
+### **2. plan-execution distinction**
 
 **计划(plan) 和执行(execution) 也是区分开的**。在创造一个作品之前，craftman 需要先有一个计划，一般来说这个计划越精确越好，然后按着这个计划一步步做出作品来。例如，一位木匠根据一张桌子的结构做计划，再去装配合适的木头。
 
-**3. raw material-finished product distinction**
+### **3. raw material-finished product distinction**
 
 **原材料(raw material) 和最终作品(finished product) 是区分开的。**例如铁矿石和铁剑的区分，铁矿石作为铁剑的原材料。
 
-**4. matter-form distinction**
+### **4. matter-form distinction**
 
 **质料(matter) 和形式(form) 也是如此**，关于质料和形式的说法，出自于亚里士多德的四因说，他将世界上事物的变化与运动的背后原因归纳为这四大类，认为凡感性实体，包括自然物和人造物，都具备这四种原因（**质料因、形式因、动力因、目的因**）。古希腊人通常认为 craft 作品都是由原材料转化为最终作品。例如铁矿石锻造成一把铁剑，在这个转化过程中，它的形式发生了变化，但它的质料依然和之前那一坨黑黑的铁矿石的质料是一样的。
 
-**5. means/end reversal in planning-execution**
+### **5. means/end reversal in planning-execution**
 >In planning, ends precede means in that the latter are chosen for the sake of the former, but in execution the means precede the end.
 
 **在计划和执行的过程中，手段和目的发生了反转。**一般来说，在构思计划的阶段，是先有一个目的，然后再去思考用什么手段去达成这个目的。而在执行阶段，手段是优先于目的的。例如，一位铁匠，想锻造出一把铁剑（目的），然后做锻造铁剑的准备工作（手段）。而在他开始锻造时，则会去思考如何使用这把锤子才能锤出他想要的铁剑的形状。
 
-**6. hierarchy of raw material-finished product, means-end, and part-whole.**
+### **6. hierarchy of raw material-finished product, means-end, and part-whole.**
 
 **Craft 一般来说具有等级制度(hierarchy)，或者是说层次关系。**
 
@@ -78,14 +78,14 @@ tags:
 ## 科林伍德对艺匠说的反驳
 科林伍德是这么一条条的反驳的（虽然这些反驳还是有不少漏洞，但这些反驳的目的是为了更好地引出他的艺术理论）：
 
-**1. 对于 means-end 的反驳**
+### **1. 对于 means-end 的反驳**
 
 他认为在 Art 中手段和目的的区分是不存在的，在 Art 中貌似很难去区分手段和目的是两种东西。
 例如创作一首诗词，它的 means 是什么呢？笔？墨水？还是说是一本诗韵词典？这些貌似都不像铁匠铸剑时使用的铁矿石是个必要条件，缺了它不行，诗词创作并不受限于工具，脑海里即可进行构思创作。或许会有人说到，那大脑就是诗词创作的 means，但这就涉及到另一个问题了，在某种意义上来说，大脑就是我们自己，是创作主体，而我们貌似不能说创作主体是 means，就像我们不能说铁匠拿着自己作为手段去锻造铁剑一样，这有些奇怪。
 
 那诗词创作的 end 又是什么呢？诗人写下的那一行行字吗？还是诗卷这样的物理实体(physical form)？铁匠锻造出的那把剑是物理实体，但诗人写的诗，却并不仅仅是那些一行行字迹或是物理实体，还有它所传达出来的那一种意境/感受。那可能又有人会提出诗词创作的 end 就是产生某种人的情感反应，或者是让人有一种特定的状态(a certain state of mind)，但科林伍德是这么回应的：对于 craftman 来说，他的目的一定是明确的，假如他今天想做一张圆桌子，但最后却做出了一张方桌子，那我们可以说他是一个bad craftman。但很多时候艺术创作并不能非常好的预料到创作的结果是什么样的，以及假设这个作品在观众中引起的反应和预期的不一样，也不代表这是一个坏的作品。
 
-**2. 对于plan-execution 的反驳**
+### **2. 对于plan-execution 的反驳**
 
 科林伍德认为计划和执行的区分在 Art 中很多时候是不存在的，他举了这么一个例子：
 >“Suppose a poet were making up verses as he walked; suddenly ﬁnding a line in his head, then another, and then dissatisﬁed with them and altering them until he got them to his liking…”（假设一个诗人在散步时编诗，忽然灵感来了，一行又一行诗句浮现在他的脑海，他切磋琢磨，写下了这首诗...）
@@ -99,11 +99,11 @@ Craft 会有一个明晰的计划，然后按着计划来执行。玩泥巴的 a
 
 因此计划不是艺术创作的必要条件。但要注意，有时候艺术创作不需要计划，绝不代表着艺术创作必须是没有计划的。不做任何计划空等着灵感到来的 romanticisim 式的创作，一般被我们认为是创作上的一种 bad way。
 
-**3. 对于raw material-finished product 的反驳**
+### **3. 对于raw material-finished product 的反驳**
 
 科林伍德在这点的反驳上我觉得很无力，他认为艺术作品中大多没有可分离的原材料和最终成品的区分。例如诗词，歌曲，油画作品等等。
 
-**4. 对于 Form-Matter 的反驳**
+### **4. 对于 Form-Matter 的反驳**
 
 关于质料和形式，科林伍德是这么说的：
 >“This is a matter which might have taken on a different form.”
@@ -116,11 +116,11 @@ Craft 会有一个明晰的计划，然后按着计划来执行。玩泥巴的 a
 而对于艺术作品来说，**“What is expressed - That which expresses it”**，被表达的就是它所表达的，科林伍德认为，艺术的追求是形式和质料的高度结合，不可轻易被分离。
 例如肖邦的 C 小调夜曲，钢琴的音调与乐谱的完美结合，才可以很好的传达出肖邦谱曲时的情感，而换成古筝去弹奏它，和原作的感觉便不一样了，给听众传达的感受也会不同。也许有人会说换种乐器弹奏感觉会更好听，但其实这已经是两个艺术作品了。
 
-**5. 对于 Means-End Reversal 的反驳**
+### **5. 对于 Means-End Reversal 的反驳**
 
 根据科林伍德的论点，Art 不区分 Means-End，自然也没有反转这种说法。
 
-**6. 对于 Hierarchy 的反驳**
+### **6. 对于 Hierarchy 的反驳**
 
 科林伍德认为 Hierarchy(等级关系) 在 Art 也是不存在的，对于艺术品来说，一幅画作便是一幅画作，一般并不会作为下一幅的原材料/工具/一部分来使用。就算是诗词中常见的引用别人的诗句作为典故，或是直接使用，这种关系都更像是借鉴(collaboration-inspiration)，而不是原材料和最终成品(raw material-finished product) 的关系。
 
