@@ -29,13 +29,13 @@ Travis 会在你每一次 git 提交之后会生成一个虚拟环境来执行�
 
 在操作前需要先熟悉三个方面的知识点。
 ### **1、HEXO命令**
-可在此了解 <a href="/2017/03/10/Hexo初入记载/" target="_blank">Hexo 初入记载</a>
+可在此了解 <a href="https://hexo.io/zh-cn/docs/commands" target="_blank">Hexo基本命令</a>
 
 ### **2、GIT命令**
 可在此了解 <a href="http://www.ruanyifeng.com/blog/2014/06/git_remote.html" target="_blank">Git远程操作详解</a>
 
 ### **3、SSH Key**
-可在此了解 <a href="/2017/06/03/SSH-key/" target="_blank">SSH Key浅析</a>
+可在此了解 <a href="/2017/06/03/SSHKey/" target="_blank">SSH Key浅析</a>
 
 ## **前提**
 在 github 仓库创建两个分支: 一个 `master`(用于部署，hexo构建后的网页代码) 和一个 `dev`(用于构建，博客的源码)。
@@ -235,7 +235,7 @@ script: # 执行的命令
 - hexo clean && hexo g -d # 虚拟机执行生成&部署命令
 ```
 
-### **至此 Travis 配置完成。**
+**至此 Travis 配置完成。**
 
 ## **第三步、Git/Hexo 其余配置**
 
