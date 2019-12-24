@@ -1,5 +1,5 @@
 # Site settings
-title: Niro Blog
+# title: Hi
 SEOTitle: 杜培的博客 | Niro Blog
 header-img: img/home-bg.jpg
 email: nirodu1219@outlook.com
@@ -7,14 +7,14 @@ description: "About an engineer & designer who loves philosophy. | 杜培，Engi
 keyword: "杜培, NiroDu, Niro, @杜培, nirodu, @nirodu, 杜培的博客,  Niro Blog, 博客, 哲学, 个人网站, 互联网 Web, JavaScript, 前端, 设计"
 url: "http://nirodu.com"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
-hey: "Ahoy"
+
 # Publish posts or collection documents with a future date.
 future: true
 
 # SNS settings
 RSS: false
 # weibo_username:     huxpro
-zhihu_username:     nirodu
+# zhihu_username:     nirodu
 github_username:    nirodu
 # twitter_username:   huxpro
 #facebook_username:  huxpro
@@ -32,11 +32,13 @@ anchorjs: true                          # if you want to customize anchor. check
 #timezone: CN  
 
 
+
 # Gems
 # from PR#40, to support local preview for Jekyll 3.0
 # make sure you have this gem installed
 # `$ gem install jekyll-paginate`
 plugins: [jekyll-paginate]
+
 
 
 # Markdown settings
@@ -54,11 +56,13 @@ kramdown:
       start_line: 1
 
 
+
 # Disqus settings
 disqus_username: niro
 
 # Netease settings
-# netease_comment: false
+netease_comment: false
+
 
 
 # Analytics settings
@@ -76,14 +80,17 @@ sidebar-about-description: "Sapere Aude, quia Veritas Vos Liberabit. <br> 哲学
 sidebar-avatar: /img/avatar-niro.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
+
 # Featured Tags
 featured-tags: true                     # whether or not using Feature-Tags
 featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
 
 
+
 # Progressive Web Apps
 chrome-tab-theme-color: "#000000"
 service-worker: true
+
 
 
 # MathJax rendering for layout:page (e.g. post preview)
