@@ -4,16 +4,58 @@ layout: photo
 ---
 
 <!DOCTYPE html>
-<html class="no-js">
-	<head>
-		<link rel="stylesheet" type="text/css" href="css/timeline.css" />
-		<script src="js/modernizr.custom.js"></script>
-	</head>
-	<body>
-		<div class="container" style="margin:0;padding:0;width:100%;">
-			<div class="main">
-        建设中...
-			</div>
-		</div>
-	</body>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/timeline.css" />
+    <script src="js/modernizr.custom.js"></script>
+    <style>
+      figure {
+        display: inline-block;
+        margin: 0 0 0 0;
+        width: 100%;
+      }
+      img {
+        width: 100%;
+        height: auto;
+			}
+    </style>
+  </head>
+
+  <body>
+    <div class="container" style="margin:0;padding:0;width:100%;">
+      <div class="main">
+        <figure>
+          <img
+            src="https://desmonding.me/zooming/assets/img/journey_start.jpg"
+            class="img-zoomable"
+          />
+        </figure>
+        <figure>
+          <img
+            src="https://desmonding.me/zooming/assets/img/journey.jpg"
+            class="img-zoomable"
+          />
+        </figure>
+      </div>
+    </div>
+
+    <!-- Load Zooming library -->
+    <script src="https://unpkg.com/zooming/build/zooming.min.js"></script>
+
+    <script>
+      // Listen to images after DOM content is fully loaded
+      document.addEventListener("DOMContentLoaded", function() {
+        const zooming = new Zooming({
+          // options...
+        });
+        zooming.config({
+          bgColor: "rgb(0,0,0)",
+          bgOpacity: 0.85,
+          customSize: "80%"
+        });
+        zooming.listen(".img-zoomable");
+      });
+    </script>
+  </body>
 </html>
